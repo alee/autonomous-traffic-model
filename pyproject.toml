@@ -18,6 +18,8 @@ sumo = [
   "sumo-data==1.28.0",
 ]
 
+geo = ["pyproj==3.7.2"]
+
 [project.scripts]
 autonomous-traffic = "autonomous_traffic.cli:main"
 
@@ -31,6 +33,7 @@ packages = ["src/autonomous_traffic"]
 include = [
   "/src", "/scripts", "/tests", "/README.md", "/pyproject.toml", "/uv.lock", "/.python-version",
   "/omf-artifacts/implementation/scenarios/coronado-benchmark.json", "/deploy",
+  "/omf-artifacts/implementation/gis", "/justfile",
 ]
 
 [tool.ruff]

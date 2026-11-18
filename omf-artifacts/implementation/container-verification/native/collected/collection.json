@@ -1,0 +1,70 @@
+{
+  "complete": true,
+  "counts": {
+    "failed": 0,
+    "invalid": 0,
+    "missing": 0,
+    "succeeded": 8
+  },
+  "expected_tasks": 8,
+  "interpretation": "Per-run metrics only; no automatic Pareto ranking or scientific robustness claim. Missing/failed tasks are not discarded.",
+  "runs": [
+    {
+      "case_id": "speed-12-tau-1p0",
+      "replicate": 0,
+      "seed": 20261117,
+      "status": "succeeded",
+      "task_id": "task-d0c0961c6887d65ccdc8fba4"
+    },
+    {
+      "case_id": "speed-12-tau-1p0",
+      "replicate": 1,
+      "seed": 20261118,
+      "status": "succeeded",
+      "task_id": "task-e3959617bbd0ef41a5f611a0"
+    },
+    {
+      "case_id": "speed-8-tau-1p0",
+      "replicate": 0,
+      "seed": 20261117,
+      "status": "succeeded",
+      "task_id": "task-6b638dbbbc34e491601d933b"
+    },
+    {
+      "case_id": "speed-8-tau-1p0",
+      "replicate": 1,
+      "seed": 20261118,
+      "status": "succeeded",
+      "task_id": "task-69260e444f2ae82701d3a798"
+    },
+    {
+      "case_id": "speed-12-tau-1p5",
+      "replicate": 0,
+      "seed": 20261117,
+      "status": "succeeded",
+      "task_id": "task-890987160ae49ff654285d06"
+    },
+    {
+      "case_id": "speed-12-tau-1p5",
+      "replicate": 1,
+      "seed": 20261118,
+      "status": "succeeded",
+      "task_id": "task-152a6cc5d890242b0075eaab"
+    },
+    {
+      "case_id": "speed-8-tau-1p5",
+      "replicate": 0,
+      "seed": 20261117,
+      "status": "succeeded",
+      "task_id": "task-04ef9248a4e7d48b215d754f"
+    },
+    {
+      "case_id": "speed-8-tau-1p5",
+      "replicate": 1,
+      "seed": 20261118,
+      "status": "succeeded",
+      "task_id": "task-949a94b9b27b7268a0311fa5"
+    }
+  ],
+  "sweep_id": "headless-fixture"
+}

@@ -39,7 +39,7 @@ The initial state will be quiescent at 03:00, with individual actors generated f
 
 This repository contains the scientific design, an accepted hypothetical Coronado benchmark, an installable Python package, a reproducible synthetic demand generator, a small SUMO checkpoint test, and a headless ensemble runner. **Coronado has not yet been simulated.** Official data-source metadata have been inspected, but road connectivity, trip demand, signal timing, and measurement coverage still need assessment. Initial numerical scenarios are hypothetical stress tests, not estimates of Phoenix traffic or malicious behavior.
 
-The next stage is acquiring and auditing the Coronado road network, assigning routes to the generated requests, and completing the traffic controls and physical initialization. Calibration and independent evaluation will be needed before drawing conclusions about Phoenix. Collision-avoidance claims will require suitable vehicle trajectories and physical modeling. The current work supports research design and early engineering tests; real-world control and deployment safety remain outside its demonstrated scope.
+A first OSM-derived road network has been acquired and audited under a proposed Coronado rectangle. The next stage is reviewing geometry and conversion assumptions, assigning routes to the generated requests, and completing traffic controls and physical initialization. Calibration and independent evaluation will be needed before drawing conclusions about Phoenix. Collision-avoidance claims will require suitable vehicle trajectories and physical modeling. The current work supports research design and early engineering tests; real-world control and deployment safety remain outside its demonstrated scope.
 
 ## Explore the scientific design
 
@@ -53,6 +53,30 @@ The next stage is acquiring and auditing the Coronado road network, assigning ro
 - [Stakeholders](omf-artifacts/stakeholder-register.md), [ethical considerations](omf-artifacts/ethics-impact-statement.md), and [scientific decisions](omf-artifacts/decision-log.md)
 
 These are living documents. This overview summarizes the proposed model; the linked scientific artifacts record its assumptions, open questions, and revisions.
+
+## Command interface and containers
+
+Use `just --list` to discover commands. Native development uses `just setup`, `just check`, and `just model <CLI arguments>`. Change the baseline clock with `just scenario 04:00:00 runs/scenario-0400.json`.
+
+Build and exercise the full application in Docker:
+
+```sh
+just image-build
+just docker-demo runs/docker-demo
+```
+
+The image builds the package from source and includes SUMO, GIS dependencies and read-only example configurations. No host Python packages or prebuilt wheel are needed for the image build. Local Docker transport uses the host's Python 3.11+ standard library; the model runs in the image. Docker runs offline by default. Each invocation preserves an input workspace and exports to a fresh output workspace, with no Docker Desktop bind-mount dependency.
+
+For Apptainer and HTCondor:
+
+```sh
+just sif-build
+just apptainer-demo runs/apptainer-demo
+just condor-plan path/to/sweep.json runs/pool-batch
+just preflight runs/pool-batch
+```
+
+Apptainer must be installed for SIF build/local execution; HTCondor manages the runtime on pool workers. `TRAFFIC_IMAGE` and `TRAFFIC_SIF` select local images. Planning records image identities and emits submit descriptions; it does not submit jobs. See the [container workflow](omf-artifacts/implementation/container-workflow.md) for workspace examples, immutable OSDF/OCI deployment and validation limits.
 
 ## Install and run
 
@@ -97,3 +121,16 @@ uv run --locked --extra sumo autonomous-traffic htc-collect --batch runs/htc-bat
 Without a worker image, planning emits `sweep.submit.in`, an explicitly non-submitting template. Supply an immutable worker image reference to render `sweep.submit`, and run the access-point preflight before any pilot submission. The demo varies native vehicle speed/headway settings on a synthetic grid; it does not replace the accepted Coronado initialization or implement reservation/coordinator policies.
 
 See the [HTCondor/OSPool workflow](omf-artifacts/implementation/htc-workflow.md), [prepared-GIS input contract](omf-artifacts/implementation/prepared-sumo-inputs.md), [worker Dockerfile](deploy/htcondor/Dockerfile), and [verification evidence](omf-artifacts/implementation/htc-verification-report.md). Scientific ranges and acceptance criteria remain explicit study decisions.
+
+## Parameterize the start and prepare street data
+
+The 03:00 start is an editable scenario setting. Shift it together with every departure/horizon clock, and optionally override road density, vehicle occupancy, household histograms and demand profiles:
+
+```sh
+uv sync --locked --extra sumo --extra geo
+uv run --locked --extra sumo --extra geo autonomous-traffic scenario-configure --base omf-artifacts/implementation/scenarios/coronado-benchmark.json --start-local 04:00:00 --overrides omf-artifacts/implementation/gis/scenario-overrides.example.json --output runs/scenario-0400.json
+```
+
+The generated variant records its inputs, recalculates accounting totals, and preserves the accepted baseline. Shifting clock labels alone preserves the elapsed demand profile; different time-of-day traffic requires explicit profile changes. Midnight rollover is supported through service-day hours such as 29:00 for 05:00 the following day.
+
+The [GIS preparation workflow](omf-artifacts/implementation/gis-workflow.md) provides `network-plan`, `network-fetch`, `network-import` and `network-build`. A first OSM extract and SUMO conversion have been audited under a proposed Coronado rectangle; see [GIS verification](omf-artifacts/implementation/gis-verification-report.md). Boundary geometry, inferred lane/speed/access and synthesized signals require review before routing or physical initialization. The package's optional `geo` extra is for preparation; workers remain offline.

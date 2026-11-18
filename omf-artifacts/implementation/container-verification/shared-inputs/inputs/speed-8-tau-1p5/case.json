@@ -1,0 +1,57 @@
+{
+  "additional": [],
+  "backend": "sumo-native",
+  "case_id": "speed-8-tau-1p5",
+  "engine_version": "1.28.0",
+  "initialization": {
+    "mode": "explicit_empty_fixture"
+  },
+  "network": {
+    "path": "network.net.xml",
+    "sha256": "714fe3f3405f11a03076467e6f80e423544d4f04cbcb4a86d2dee1aa9756e0c5"
+  },
+  "parameter_bindings": {
+    "following_headway_s": {
+      "attribute": "tau",
+      "path": "routes.xml",
+      "xpath": ".//vType[@id='probe']"
+    },
+    "vehicle_max_speed_mps": {
+      "attribute": "maxSpeed",
+      "path": "routes.xml",
+      "xpath": ".//vType[@id='probe']"
+    }
+  },
+  "parameters": {
+    "following_headway_s": 1.5,
+    "vehicle_max_speed_mps": 8.0
+  },
+  "provenance": {
+    "gis_source": "synthetic netgenerate grid; no Phoenix GIS",
+    "initial_parameterization": "engineering fixture only; not the accepted Coronado initialization",
+    "input_realization_id": "three-fixed-vehicle-requests-v1",
+    "scope": "3x3 grid; empty start explicitly restricted to fixture"
+  },
+  "purpose": "engineering_fixture",
+  "request_ledger": {
+    "path": "requests.json",
+    "sha256": "d13a65cd05938a877256c0851f90c7472918114686693fb06faf4e529e1342af"
+  },
+  "review_status": "engineering_fixture",
+  "routes": [
+    {
+      "path": "routes.xml",
+      "sha256": "5f8fadd39d58839d10c930ae06192ab8883d8eb3de8da957143572f2604293f1"
+    }
+  ],
+  "schema_version": "1",
+  "simulation": {
+    "begin_s": 0,
+    "check_junction_collisions": true,
+    "collision_action": "warn",
+    "collision_min_gap_factor": 0,
+    "end_s": 160,
+    "step_length_s": 0.5,
+    "time_to_teleport_s": -1
+  }
+}

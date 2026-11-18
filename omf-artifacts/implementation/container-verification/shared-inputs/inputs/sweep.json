@@ -1,0 +1,29 @@
+{
+  "axes": {
+    "following_headway_s": [
+      1.0,
+      1.5
+    ],
+    "vehicle_max_speed_mps": [
+      8.0,
+      12.0
+    ]
+  },
+  "base_seed": 20261117,
+  "cases": [
+    "speed-8-tau-1p0/case.json",
+    "speed-8-tau-1p5/case.json",
+    "speed-12-tau-1p0/case.json",
+    "speed-12-tau-1p5/case.json"
+  ],
+  "replicates": 2,
+  "resources": {
+    "cpus": 1,
+    "disk_mb": 4096,
+    "memory_mb": 2048,
+    "wall_time_s": 3600
+  },
+  "schema_version": "1",
+  "seed_scope": "sumo_engine_only",
+  "sweep_id": "headless-fixture"
+}

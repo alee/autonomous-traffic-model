@@ -1,0 +1,14 @@
+{
+  "package_version": "0.1.0",
+  "python": "3.12.16",
+  "sumo_binary": "/usr/local/bin/sumo",
+  "netgenerate_binary": "/usr/local/bin/netgenerate",
+  "optional_packages": {
+    "eclipse-sumo": "1.28.0",
+    "traci": "1.28.0",
+    "sumolib": "1.28.0",
+    "sumo-data": "1.28.0",
+    "pyproj": "3.7.2"
+  },
+  "note": "Environment inventory only; does not establish model readiness or checkpoint compatibility."
+}

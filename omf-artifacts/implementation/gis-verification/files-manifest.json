@@ -1,0 +1,16 @@
+{
+  "algorithm": "sha256",
+  "files": {
+    "audit-summary.json": "6ea54af576955cd18e87a28f4fd2e2bd1eee11635d6d3e74d53c2a86565459ab",
+    "build.json": "733a46df2253a6890138d9e70c0fde64fc10c088420a65683de00ee9a4c8cc49",
+    "core-environment.json": "a65759854e0d8214bfe1ccab13b8dce81a1c837f248eb87b2a553e5bb6b435fb",
+    "netconvert.stderr": "c7aaf6ff295da4af7b8e1e7189545eee096bcb05b9ed7ebb5d295a489628bfc7",
+    "netconvert.stdout": "c5b6fd8211edd733614c0fcc956b64ff288d5876926ffe7291fcfa8bf3dbb887",
+    "plan.json": "3f9f6c5f52c2f18805263f90f58687eaab2c69ebdff9f7e9ea9ef678a9a32af2",
+    "query.overpassql": "526f1c2d677e78d5c8bb68ceb19a4cd9719beaa653474b84bff974b0ee33f3df",
+    "scope.geojson": "3ceadd424e80129bb1fce9838422293687d614af6df1aee04429d682be30ad71",
+    "source.json": "3b069fea81b8d8671e46260bf17a66c464bc06cdd2c4b21f05cb4f0a4ab15787",
+    "tests.log": "3b964fb8ae48bd443632876a88af95c87eb6135d6cd044c90ef911c0f438a6ad",
+    "verification.json": "91d8d34e063de6647bc46232415da06bf513fa62701f9b4e12a49c69f1d68de8"
+  }
+}

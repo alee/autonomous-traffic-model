@@ -18,8 +18,13 @@ def add_commands(sub):
     plan.add_argument("--sweep", type=Path, required=True)
     plan.add_argument("--output", type=Path, required=True)
     plan.add_argument(
+        "--sif",
+        type=Path,
+        help="Local SIF to checksum and stage for Apptainer execution by HTCondor",
+    )
+    plan.add_argument(
         "--image",
-        help="Immutable docker://registry/image@sha256:digest; omit for a non-submitting template",
+        help="Immutable docker://registry/image@sha256:digest or osdf:///.../worker-<sha256>.sif; omit for a non-submitting template",
     )
     pre = sub.add_parser(
         "htc-preflight",
@@ -58,7 +63,7 @@ def dispatch(args):
     elif args.command == "htc-plan":
         from .plan import prepare
 
-        result = prepare(args.sweep, args.output, args.image)
+        result = prepare(args.sweep, args.output, args.image, args.sif)
         result = {k: v for k, v in result.items() if k != "tasks"}
     elif args.command == "htc-preflight":
         from .plan import preflight

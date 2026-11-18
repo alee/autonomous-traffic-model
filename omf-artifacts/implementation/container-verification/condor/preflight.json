@@ -1,0 +1,8 @@
+{
+  "task_count": 8,
+  "input_digests": "passed",
+  "container_image_configured": true,
+  "condor_parser": "not_available",
+  "submitted": false,
+  "image_validation": "content digest; runtime verification is separate"
+}

@@ -1,0 +1,22 @@
+# Generated batch: run condor_submit -dry-run classads.txt sweep.submit on the access point first.
+universe = container
+container_target_dir = /work
+container_image = REPLACE_WITH_IMMUTABLE_WORKER_IMAGE
+executable = worker.sh
+arguments = --task $(task_id).json --bundle $(case_id).tar.gz --output result
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+transfer_input_files = tasks/$(task_id).json,bundles/$(case_id).tar.gz
+transfer_output_files = result.tar.gz
+transfer_output_remaps = "result.tar.gz=results/$(task_id).tar.gz"
+output = logs/$(task_id).$(ClusterId).$(ProcId).out
+error = logs/$(task_id).$(ClusterId).$(ProcId).err
+log = logs/events.log
+request_cpus = 1
+request_memory = 2048MB
+request_disk = 4096MB
+requirements = (OpSys == "LINUX") && (Arch == "X86_64")
+environment = "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1"
+on_exit_hold = (ExitBySignal =?= True) || (ExitCode =!= 0)
++JobDurationCategory = "Medium"
+queue task_id,case_id from jobs.tsv

@@ -1,0 +1,19 @@
+{
+  "attribution": "\u00a9 OpenStreetMap contributors",
+  "copyright_url": "https://www.openstreetmap.org/copyright",
+  "coverage_note": "Requested extent is acquisition metadata, not a guarantee of map completeness",
+  "license": "ODbL-1.0",
+  "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "osm_base": "2026-11-18T06:40:59Z",
+  "query": "[out:xml][timeout:45];(way[\"highway\"](33.451,-112.078,33.493,-112.033);relation[\"type\"=\"restriction\"](33.451,-112.078,33.493,-112.033););(._;>>;);out body;",
+  "recorded_utc": "2026-11-18T06:46:56.341078+00:00",
+  "requested_bbox_wgs84": [
+    -112.078,
+    33.451,
+    -112.033,
+    33.493
+  ],
+  "schema_version": "1",
+  "sha256": "db3027b2489fe63dd76c8b76c80b8859888ead8922d23686fa854b7f527c9ae7",
+  "source_uri": "https://overpass-api.de/api/interpreter"
+}

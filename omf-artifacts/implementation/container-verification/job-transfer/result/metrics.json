@@ -1,0 +1,25 @@
+{
+  "case_id": "speed-12-tau-1p0",
+  "completed_persons_ledger": 2,
+  "completed_vehicles": 2,
+  "entered_vehicles": 3,
+  "mean_completed_request_to_arrival_s": 89.5,
+  "p95_completed_request_to_arrival_s_nearest_rank": 91.0,
+  "parameters": {
+    "following_headway_s": 1.0,
+    "vehicle_max_speed_mps": 12.0
+  },
+  "person_accounting": "ledger weighted; carried persons are not independently verified by this native backend",
+  "person_weighted_mean_completed_request_to_arrival_s": 88.0,
+  "registered_collision_events": 0,
+  "replicate": 0,
+  "requested_persons_ledger": 3,
+  "requested_vehicles": 3,
+  "safety_interpretation": "engine event counts only; no collision-avoidance or injury claim",
+  "seed": 20261117,
+  "seed_scope": "sumo_engine_only",
+  "task_id": "task-d0c0961c6887d65ccdc8fba4",
+  "unfinished_accumulated_request_time_s": 5.0,
+  "unfinished_fraction": 0.3333333333333333,
+  "unfinished_vehicles": 1
+}

@@ -31,3 +31,11 @@ For a realized initial state, check road-loading consistency using the selected 
 ## Headless runner checks now performed
 
 The generic runner has a separate tested contract: input/binding digests, task identity, safe archives, complete factorial coverage, fresh-state/RNG rules, isolation, serial/concurrent agreement, missing/failed-result reporting, and unfinished-cohort accounting. htc-verification-report.md records native and offline-container results. These checks do not satisfy the future city adapter, fault, coordination or complete coupled checkpoint gates above. Native worker eviction currently restarts the task from its original prepared input; there is no distributed continuation protocol.
+
+## Scenario/GIS verification performed
+
+Tests cover clock shifts across midnight with fixed-seed elapsed-demand equality, explicit profile overrides and derived totals, rejection of invalid/unknown/approval overrides, metric buffering, polyline clipping with reentry, directed components, source digests/coverage, context mismatches, partial Overpass responses and offline SUMO one-way conversion. See gis-verification-report.md for the 33-test run and the separate actual-data audit. These checks establish preparation/accounting behavior; they do not satisfy the remaining physical initialization, route, control, policy or scientific validation gates.
+
+## Container interface verification
+
+Verify just syntax/argument forwarding, source-built image startup as non-root, bundled examples, scenario/GIS commands, offline Docker execution, copied workspace ownership, failure export/cleanup, SIF staging/digest mutation rejection and content-named OSDF syntax. Execute the same frozen fixture inputs under native Python, Docker and Apptainer and compare collected metrics. Report actual runtime/tool limitations separately from pool validation; see container-verification-report.md.

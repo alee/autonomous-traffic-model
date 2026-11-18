@@ -22,7 +22,7 @@ def largest_remainder(total, fractions):
 def relative_us(clock, start):
     def seconds(value):
         h, m, s = map(int, value.split(":"))
-        if not (0 <= h < 24 and 0 <= m < 60 and 0 <= s < 60):
+        if not (0 <= h <= 167 and 0 <= m < 60 and 0 <= s < 60):
             raise ValueError("Invalid local clock")
         return h * 3600 + m * 60 + s
 
@@ -30,8 +30,13 @@ def relative_us(clock, start):
 
 
 def materialize(config, seed):
-    if config["status"] != "accepted-hypothetical-benchmark":
-        raise ValueError("Only an explicitly accepted benchmark may be materialized")
+    if config["status"] not in {
+        "accepted-hypothetical-benchmark",
+        "configured-hypothetical-scenario",
+    }:
+        raise ValueError(
+            "Only an accepted benchmark or explicit configured hypothetical variant may be materialized"
+        )
     hh = config["households"]
     households, residents, by_household = [], [], {}
     for size_key, count in sorted(hh["size_counts"].items(), key=lambda x: int(x[0])):

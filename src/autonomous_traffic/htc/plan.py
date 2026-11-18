@@ -7,7 +7,8 @@ import math
 import re
 import shutil
 import subprocess
-from pathlib import Path
+from pathlib import Path, PurePosixPath
+from urllib.parse import urlparse
 
 from .inputs import bundle_case, canonical, code_digest, digest
 
@@ -19,7 +20,7 @@ def write_json(path, data):
     path.write_text(json.dumps(data, indent=2, sort_keys=True, allow_nan=False) + "\n")
 
 
-def prepare(sweep_path, output, image=None):
+def prepare(sweep_path, output, image=None, sif=None):
     sweep_path, output = Path(sweep_path).resolve(), Path(output).resolve()
     sweep = json.loads(sweep_path.read_text())
     if sweep["schema_version"] != "1" or not NAME.fullmatch(sweep["sweep_id"]):
@@ -43,10 +44,36 @@ def prepare(sweep_path, output, image=None):
         raise ValueError(
             "Prepared inputs are immutable; this backend seeds only the engine. Prepare separate demand realizations explicitly."
         )
-    if image is not None and not IMAGE.fullmatch(image):
-        raise ValueError(
-            "Use an immutable docker://registry/image@sha256:<digest> reference"
+    if image and sif:
+        raise ValueError("Choose either an immutable image URI or a local SIF")
+    image_asset = None
+    if image is not None:
+        remote_sif = re.fullmatch(
+            r"osdf:///[A-Za-z0-9._/-]+/worker-([a-f0-9]{64})\.sif", image
         )
+        if remote_sif and ".." not in PurePosixPath(urlparse(image).path).parts:
+            image_asset = {
+                "uri": image,
+                "sha256": remote_sif.group(1),
+                "delivery": "osdf",
+                "validation": "content-named URI; remote bytes not downloaded or verified",
+            }
+        elif not IMAGE.fullmatch(image):
+            raise ValueError(
+                "Use an immutable docker://registry/image@sha256:<digest> or osdf:///.../worker-<sha256>.sif reference"
+            )
+    if sif is not None:
+        sif = Path(sif).resolve()
+        if not sif.is_file() or sif.suffix != ".sif":
+            raise ValueError("Provide an existing local .sif image")
+        image_hash = digest(sif)
+        image = "images/worker-" + image_hash + ".sif"
+        image_asset = {
+            "path": image,
+            "sha256": image_hash,
+            "delivery": "htcondor_file_transfer",
+            "validation": "content digest; runtime verification is separate",
+        }
     resources = sweep["resources"]
     for key in ["memory_mb", "disk_mb", "wall_time_s"]:
         if type(resources[key]) is not int or resources[key] < 1:
@@ -85,6 +112,11 @@ def prepare(sweep_path, output, image=None):
     # All input checks precede creation of a batch that could be submitted.
     for name in ["tasks", "bundles", "logs", "results"]:
         (output / name).mkdir(parents=True, exist_ok=True)
+    if sif is not None:
+        (output / "images").mkdir()
+        shutil.copyfile(sif, output / image)
+        if digest(output / image) != image_asset["sha256"]:
+            raise ValueError("SIF changed during staging")
     fingerprint = code_digest()
     tasks = []
     for key, (source, case) in sorted(cases.items()):
@@ -125,6 +157,7 @@ def prepare(sweep_path, output, image=None):
     )
     submit = f"""# Generated batch: run condor_submit -dry-run classads.txt sweep.submit on the access point first.
 universe = container
+container_target_dir = /work
 container_image = {image or "REPLACE_WITH_IMMUTABLE_WORKER_IMAGE"}
 executable = worker.sh
 arguments = --task $(task_id).json --bundle $(case_id).tar.gz --output result
@@ -139,7 +172,7 @@ log = logs/events.log
 request_cpus = 1
 request_memory = {resources["memory_mb"]}MB
 request_disk = {resources["disk_mb"]}MB
-requirements = (OpSys == "LINUX") && (Arch == "X86_64")
+requirements = (OpSys == "LINUX") && (Arch == "X86_64"){" && (HasSingularity =?= True)" if image_asset else ""}
 environment = "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1"
 on_exit_hold = (ExitBySignal =?= True) || (ExitCode =!= 0)
 +JobDurationCategory = "Medium"
@@ -152,6 +185,7 @@ queue task_id,case_id from jobs.tsv
         "sweep_id": sweep["sweep_id"],
         "status": "prepared_not_submitted",
         "container_image": image,
+        "image_asset": image_asset,
         "submit_file": submit_name,
         "submit_rendered": image is not None,
         "control_files": {
@@ -187,6 +221,9 @@ queue task_id,case_id from jobs.tsv
 def preflight(batch):
     batch = Path(batch).resolve()
     plan = json.loads((batch / "plan.json").read_text())
+    asset = plan.get("image_asset")
+    if asset and "path" in asset and digest(batch / asset["path"]) != asset["sha256"]:
+        raise ValueError("Staged SIF image changed")
     for name, expected in plan["control_files"].items():
         if digest(batch / name) != expected:
             raise ValueError("Batch control file changed: " + name)
@@ -203,6 +240,9 @@ def preflight(batch):
         "container_image_configured": bool(plan["container_image"]),
         "condor_parser": "not_available",
         "submitted": False,
+        "image_validation": asset["validation"]
+        if asset
+        else "immutable URI or not configured",
     }
     submit = shutil.which("condor_submit")
     if submit and not plan["submit_rendered"]:

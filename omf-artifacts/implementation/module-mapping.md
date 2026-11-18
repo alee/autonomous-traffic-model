@@ -18,3 +18,11 @@ Scientific authority remains ../abm-spec.md, ../initial-conditions.md, ../assump
 ## Headless ensemble implementation
 
 Prepared network, explicit routes, optional fresh initial state and passenger ledger enter through `htc.inputs.validate_case`. `htc.plan.prepare` enumerates finite cases × replicates with immutable identities; `htc.worker.run_task` executes SUMO; `htc.collect.collect` reports every expected task. See htc-workflow.md and prepared-sumo-inputs.md. The earlier “future experiment runner” row now applies to scientific policy comparisons: generic native batch mechanics are implemented, while controller, fault and malicious-actor model adapters remain future work. The engine seed changes native runtime randomness only; demand and initial placement are frozen inputs.
+
+## Parameterized scenario and geographic inputs
+
+Clock/start and occupancy profiles map to `scenario.configure`; shifted 22:00 starts preserve elapsed requests across midnight in tests. Household, party and external-arrival totals are recomputed from configured inputs, with infeasible allocations rejected. Configurable AOI/context maps to `gis.prepare.plan`, metric length/topology diagnostics to `gis.audit.audit`. A downloaded OSM road/restriction snapshot has been converted, but the boundary, legal/access details, inferred lane/speed inventory and controls remain unreviewed. The conditional density-derived vehicle count is not physical placement or proof of routing readiness.
+
+## Shared runtime formats and operator commands
+
+The reproducible execution interface maps to justfile plus scripts/containers.py, with scientific logic remaining in the package. Container identity and task transfer map to htc.plan's local SIF staging and content-named OSDF/immutable OCI references. HTCondor starts the runtime; worker.sh starts only the installed CLI. Native/Docker/Apptainer fixture agreement and remaining access-point checks are recorded in container-verification-report.md.

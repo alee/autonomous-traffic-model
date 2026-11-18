@@ -10,6 +10,8 @@ from pathlib import Path
 
 from . import __version__
 from .demand import materialize
+from .gis.api import add_commands as add_network_commands
+from .gis.api import dispatch as dispatch_network
 from .htc.api import add_commands, dispatch
 from .outputs import write_outputs
 
@@ -26,7 +28,7 @@ def nonnegative_seed(value):
 
 def environment_report():
     packages = {}
-    for name in ["eclipse-sumo", "traci", "sumolib", "sumo-data"]:
+    for name in ["eclipse-sumo", "traci", "sumolib", "sumo-data", "pyproj"]:
         try:
             packages[name] = importlib.metadata.version(name)
         except importlib.metadata.PackageNotFoundError:
@@ -47,7 +49,7 @@ def main(argv=None):
     sub = parser.add_subparsers(dest="command", required=True)
     demand = sub.add_parser(
         "materialize",
-        help="Create accepted synthetic inputs without routing or simulating traffic",
+        help="Create hypothetical demand inputs without routing or simulating traffic",
     )
     demand.add_argument("--config", type=Path, required=True)
     demand.add_argument("--output", type=Path, required=True)
@@ -67,8 +69,29 @@ def main(argv=None):
         "doctor", help="Report package, Python and optional engine availability"
     )
     add_commands(sub)
+    add_network_commands(sub)
+    variant = sub.add_parser(
+        "scenario-configure",
+        help="Create an explicit hypothetical variant with shifted clock and validated input overrides",
+    )
+    variant.add_argument("--base", type=Path, required=True)
+    variant.add_argument("--output", type=Path, required=True)
+    variant.add_argument("--overrides", type=Path)
+    variant.add_argument("--start-local")
     args = parser.parse_args(argv)
     try:
+        if args.command == "scenario-configure":
+            from .scenario import configure
+
+            print(
+                json.dumps(
+                    configure(args.base, args.output, args.overrides, args.start_local),
+                    indent=2,
+                )
+            )
+            return 0
+        if args.command.startswith("network-"):
+            return dispatch_network(args)
         if args.command.startswith("htc-"):
             return dispatch(args)
         if args.command == "doctor":

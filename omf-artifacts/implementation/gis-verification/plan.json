@@ -1,0 +1,39 @@
+{
+  "aoi_bbox_wgs84": [
+    -112.065188,
+    33.4657204,
+    -112.047644,
+    33.4802236
+  ],
+  "aoi_xy": [
+    401018.3809504356,
+    3703409.5125719425,
+    402664.93232257135,
+    3705034.1489705546
+  ],
+  "benchmark_sha256": "4d41dfd4ef6a64a3cabcc8c8d35e6bbfbc2315cf330bcf96097f9373573ab854",
+  "config_sha256": "161708cffdd2cb4a6904af89398f4b2bf44869cd9770b20953fdb03e777e6482",
+  "context_margin_m": 1000,
+  "context_margin_source": "benchmark candidate_aoi.context_buffer_m",
+  "context_method": "projected AOI-corner envelope expanded on each axis; not a rounded polygon buffer",
+  "context_xy": [
+    400018.3809504356,
+    3702409.5125719425,
+    403664.93232257135,
+    3706034.1489705546
+  ],
+  "download_margin_m": 100,
+  "endpoint": "https://overpass-api.de/api/interpreter",
+  "fetch_bbox_wgs84": [
+    -112.0773260624738,
+    33.45554870066963,
+    -112.03551559452127,
+    33.49039265796853
+  ],
+  "geometry_status": "proposed",
+  "metric_crs": "EPSG:32612",
+  "query": "[out:xml][timeout:45];(way[\"highway\"](33.45554870066963,-112.0773260624738,33.49039265796853,-112.03551559452127);relation[\"type\"=\"restriction\"](33.45554870066963,-112.0773260624738,33.49039265796853,-112.03551559452127););(._;>>;);out body;",
+  "schema_version": "1",
+  "study_id": "coronado-network-proposal-v1",
+  "traffic_ready": false
+}

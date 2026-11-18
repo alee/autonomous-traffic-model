@@ -1,0 +1,102 @@
+{
+  "conditional_initial_road_target": {
+    "context_lane_km": 382.1094305867584,
+    "status": "conditional on proposed geometry/conversion; no vehicles placed",
+    "vehicle_count": 764,
+    "vehicles_per_lane_km": 2.0
+  },
+  "geometry_status": "proposed",
+  "invalid_geometry_lanes": [],
+  "lane_km": {
+    "aoi": 75.62003677019091,
+    "context": 382.1094305867584,
+    "retained_network": 454.40301000002523
+  },
+  "lane_length_method": "SUMO declared external passenger-lane length allocated by clipped polyline fraction; internal junction lanes excluded",
+  "limitations": [
+    "No topology repair or largest-component pruning performed.",
+    "Default typemap and generated native control programs require review; not empirical signal timings.",
+    "Geometry/connectivity do not validate speeds, lanes, legal/time-dependent access or routing demand.",
+    "AOI is a proposed projected rectangular envelope; retained edges and download padding extend beyond context.",
+    "No resident endpoints, routes, physical initialization, controllers or faults are produced."
+  ],
+  "metric_crs": "EPSG:32612",
+  "native_tls_count": 345,
+  "osm_source_audit": {
+    "highway_ways": 10593,
+    "highway_ways_without_tags": {
+      "lanes": 8832,
+      "maxspeed": 9569,
+      "oneway": 8306
+    },
+    "interpretation": "Absent source tags may trigger converter inference. Missing oneway does not prove two-way access; legal defaults and road types matter.",
+    "missing_way_node_refs": [],
+    "nodes": 43359,
+    "relations": 136,
+    "ways": 10593
+  },
+  "passenger_edge_graph": {
+    "interpretation": "Union of allowed lane connections by edge; does not prove feasible lane changes or origin-destination reachability.",
+    "vertices": 9764,
+    "weak_component_sizes": [
+      9730,
+      4,
+      4,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "weak_components": 16,
+    "weak_components_edges_count": 16
+  },
+  "passenger_lane_graph": {
+    "arcs": 19405,
+    "interpretation": "Lane-connection graph; no lane-change arcs. Boundary lanes and terminal lanes are diagnostics, not automatic errors or selected gateways.",
+    "largest_strong_component_size": 12499,
+    "strong_components": 1428,
+    "vertices": 13951,
+    "weak_component_sizes": [
+      13789,
+      33,
+      22,
+      21,
+      20,
+      15,
+      13,
+      4,
+      4,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "weak_components": 24,
+    "lanes_without_incoming_count": 65,
+    "lanes_without_outgoing_count": 85,
+    "weak_components_lanes_count": 24
+  },
+  "schema_version": "1",
+  "status": "diagnostics_require_review",
+  "traffic_ready": false
+}

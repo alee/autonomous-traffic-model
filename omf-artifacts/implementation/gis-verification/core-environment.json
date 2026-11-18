@@ -1,0 +1,14 @@
+{
+  "package_version": "0.1.0",
+  "python": "3.12.3",
+  "sumo_binary": null,
+  "netgenerate_binary": null,
+  "optional_packages": {
+    "eclipse-sumo": null,
+    "traci": null,
+    "sumolib": null,
+    "sumo-data": null,
+    "pyproj": null
+  },
+  "note": "Environment inventory only; does not establish model readiness or checkpoint compatibility."
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": "1",
+  "runtime": "apptainer",
+  "image": {
+    "sif_sha256": "229f560f1dd0810f151124a8a4bb1e35650e9cd17ccf3a1b1a69c00d4c23cd4f",
+    "path": "/tmp/traffic-containers/canonical-application.sif"
+  },
+  "command": [
+    "autonomous-traffic",
+    "htc-collect",
+    "--batch",
+    "batch",
+    "--output",
+    "collected"
+  ],
+  "input_workspace": "/tmp/traffic-containers/apptainer-shared",
+  "started_utc": "2026-11-18T07:28:05.408800+00:00",
+  "exit_code": 0,
+  "network": "host (Apptainer does not isolate networking by default)",
+  "finished_utc": "2026-11-18T07:28:05.653399+00:00"
+}

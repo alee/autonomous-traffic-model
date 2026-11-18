@@ -1,0 +1,12 @@
+{
+  "schema_version": "1",
+  "source_oci": {
+    "id": "sha256:e2282c22e9257153211a6b2959981887f8566c630c8d480ba61e6ca4bbcd76d8",
+    "repo_digests": [
+      "autonomous-traffic-model@sha256:e2282c22e9257153211a6b2959981887f8566c630c8d480ba61e6ca4bbcd76d8"
+    ],
+    "architecture": "amd64"
+  },
+  "sif_sha256": "229f560f1dd0810f151124a8a4bb1e35650e9cd17ccf3a1b1a69c00d4c23cd4f",
+  "apptainer": "apptainer version 1.5.5"
+}

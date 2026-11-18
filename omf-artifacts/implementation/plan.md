@@ -22,3 +22,11 @@ The project now has a src-layout package, autonomous-traffic CLI, optional pinne
 ## Headless HTC preparation
 
 A generic native-SUMO prepared-case runner now supports finite factorial cases × engine-seed replicates, isolated local validation, container execution and non-submitting HTCondor batch preparation. See htc-workflow.md, prepared-sumo-inputs.md and htc-verification-report.md. This is the execution layer for future city experiments, not implementation of their scientific mechanisms. Next, produce and audit the GIS-derived network and occupancy-conditioned initial state, compile demand to explicit routes/ledger, and add tested policy/operator/fault adapters before interpreting an ensemble scientifically. Start with a small AOI and representative pilot; measure runtime, memory, disk and outputs before scaling. Scientific design/ranges stay under OMFA authority.
+
+## GIS acquisition and user-requested easy parameterization
+
+The user clarified that the 03:00 benchmark must be easily parameterizable. Scenario configuration now shifts the complete clock consistently, supports midnight service-hour endpoints, exposes nested profile overrides and recomputes accounting totals without modifying the accepted benchmark. Preparation accepts a scenario's context margin explicitly. The first public OSM snapshot and SUMO conversion are retained locally, with reviewed compact acquisition/audit evidence in gis-verification/. See gis-workflow.md. Next: review proposed geometry, inferred attributes and disconnected components; declare endpoint/gateway and control/dynamic profiles; then compile routes and the physical initial state. Successful conversion alone is not city-model readiness.
+
+## Container application interface
+
+The user requested just plus a full application image usable locally through Docker and under Apptainer/HTCondor. The new command interface, source-built OCI image, SIF conversion, workspace transport and immutable SIF planning are in container-workflow.md. This changes execution/packaging, not traffic mechanisms or parameters. Preserve the existing GIS/scenario work; actual access-point parser/pool checks and publication remain separate operations.

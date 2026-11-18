@@ -1,0 +1,12 @@
+{
+  "source_sha256": "db3027b2489fe63dd76c8b76c80b8859888ead8922d23686fa854b7f527c9ae7",
+  "network_sha256": "86012be813fcd26171a9b1175b20ea417a82ff11a67f64ef8317bea286a47674",
+  "full_audit_sha256": "07693f60262d857eea6e9cc5adb5352646bc50ad4eb856459e6fa70a75cf1818",
+  "raw_local_directory": "runs/coronado-gis",
+  "base_git_revision": "161868c6f688ceef5f9b5c05610bea673198e921",
+  "worktree_status": "uncommitted scenario and GIS extension",
+  "tests_passed": 33,
+  "geometry_review": "proposed; not adopted as benchmark polygon",
+  "traffic_simulated": false,
+  "code_sha256": "0688b83cfce4d26dcfbd723f3b6a31c617a17512bbd700a1d423586f06ffe503"
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": "1",
+  "runtime": "docker",
+  "image": {
+    "id": "sha256:e2282c22e9257153211a6b2959981887f8566c630c8d480ba61e6ca4bbcd76d8",
+    "repo_digests": [
+      "autonomous-traffic-model@sha256:e2282c22e9257153211a6b2959981887f8566c630c8d480ba61e6ca4bbcd76d8"
+    ],
+    "architecture": "amd64"
+  },
+  "command": [
+    "/bin/sh",
+    "-c",
+    "set -eu\nautonomous-traffic doctor > environment.json\nautonomous-traffic scenario-configure --base /opt/traffic/examples/coronado-benchmark.json --start-local 22:00:00 --output scenario.json\nautonomous-traffic network-plan --config /opt/traffic/examples/gis/coronado-network.proposed.json --benchmark scenario.json --output geometry\nautonomous-traffic htc-demo --output inputs\nautonomous-traffic htc-plan --sweep inputs/sweep.json --output batch\nautonomous-traffic htc-local --batch batch --jobs 2\nautonomous-traffic htc-collect --batch batch --output collected\n"
+  ],
+  "input_workspace": null,
+  "started_utc": "2026-11-18T07:26:32.448580+00:00",
+  "exit_code": 0,
+  "network": "none",
+  "container_state": {
+    "Status": "exited",
+    "Running": false,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 0,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-11-18T07:26:32.617148306Z",
+    "FinishedAt": "2026-11-18T07:26:33.877614627Z"
+  },
+  "finished_utc": "2026-11-18T07:26:34.053222+00:00"
+}

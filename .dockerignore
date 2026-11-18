@@ -3,8 +3,13 @@
 **/__pycache__
 .ruff_cache
 runs
-omf-artifacts
-src
+dist
+build
 scripts
 tests
-# The image consumes the built wheel and exported lock, not checkout files.
+omf-artifacts/**
+!omf-artifacts/implementation/
+!omf-artifacts/implementation/scenarios/
+!omf-artifacts/implementation/scenarios/coronado-benchmark.json
+!omf-artifacts/implementation/gis/
+!omf-artifacts/implementation/gis/*.json

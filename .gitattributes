@@ -1,2 +1,3 @@
 # Preserve recorded CSV bytes and accept their standard CRLF record endings.
 omf-artifacts/implementation/htc-verification/**/*.csv -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+omf-artifacts/implementation/container-verification/**/*.csv -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

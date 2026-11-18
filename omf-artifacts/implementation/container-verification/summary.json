@@ -1,0 +1,31 @@
+{
+  "purpose": "engineering_verification_only",
+  "date_local": "2026-11-18",
+  "base_git_revision": "161868c6f688ceef5f9b5c05610bea673198e921",
+  "worktree": "existing uncommitted GIS/scenario slice plus uncommitted container extension",
+  "code_sha256": "9fede88594e735e8cd2ff2c799fd23fc98c8ffb664d2f85d9fca5af6e45007a2",
+  "tests_passed": 39,
+  "matched_tasks_per_runtime": 8,
+  "matched_runtimes": [
+    "native",
+    "docker",
+    "apptainer"
+  ],
+  "matched_metrics_equal_bytes": true,
+  "docker_full_smoke": "passed; network disabled, read-only root and copied volume workspace",
+  "apptainer_full_smoke": "passed; non-setuid runtime, clean environment and contained workspace",
+  "generated_condor_worker_apptainer": "passed; one transferred task/bundle; metrics match corresponding Docker task",
+  "sif_sha256": "229f560f1dd0810f151124a8a4bb1e35650e9cd17ccf3a1b1a69c00d4c23cd4f",
+  "image_id": "sha256:e2282c22e9257153211a6b2959981887f8566c630c8d480ba61e6ca4bbcd76d8",
+  "just": "1.59.0",
+  "apptainer": "1.5.5",
+  "python_native": "3.12.3",
+  "python_image": "3.12.16",
+  "sumo": "1.28.0",
+  "pyproj": "3.7.2",
+  "image_published": false,
+  "osdf_uploaded": false,
+  "pool_submitted": false,
+  "condor_parser": "not_available",
+  "osdf_remote_bytes_verified": false
+}

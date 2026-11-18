@@ -1,0 +1,10 @@
+{
+  "schema_version": "1",
+  "study_id": "coronado-network-proposal-v1",
+  "geometry_status": "proposed",
+  "aoi_bbox_wgs84": [-112.065188, 33.4657204, -112.047644, 33.4802236],
+  "metric_crs": "EPSG:32612",
+  "context_margin_m": 1000,
+  "download_margin_m": 100,
+  "geometry_note": "Proposed rectangular envelope from OSM intersections of 7th/16th Streets with McDowell/Thomas Roads. Divided carriageways and curved road boundaries require review; not an accepted AOI polygon."
+}

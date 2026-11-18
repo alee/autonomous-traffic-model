@@ -1,0 +1,57 @@
+{
+  "casey/just": {
+    "tag": "1.59.0",
+    "assets": [
+      {
+        "name": "just-1.59.0-x86_64-unknown-linux-musl.tar.gz",
+        "url": "https://github.com/casey/just/releases/download/1.59.0/just-1.59.0-x86_64-unknown-linux-musl.tar.gz",
+        "digest": "sha256:409044617b6f06517c1035e55ca38c8c856ff8b650e41bc2aa1ef82d5903a23e"
+      }
+    ]
+  },
+  "apptainer/apptainer": {
+    "tag": "v1.5.5",
+    "assets": [
+      {
+        "name": "apptainer-dbgsym_1.5.5-trixie+_amd64.deb",
+        "url": "https://github.com/apptainer/apptainer/releases/download/v1.5.5/apptainer-dbgsym_1.5.5-trixie%2B_amd64.deb",
+        "digest": "sha256:3ff13ffd94c58fc88c614f20a47557638db0f6298298486e783f227afbd98ef4"
+      },
+      {
+        "name": "apptainer-dbgsym_1.5.5_amd64.deb",
+        "url": "https://github.com/apptainer/apptainer/releases/download/v1.5.5/apptainer-dbgsym_1.5.5_amd64.deb",
+        "digest": "sha256:2fa9e6692ce6df43a0ca33dbe4a36874cf31599afe12defde63672b8f5b04f2d"
+      },
+      {
+        "name": "apptainer-suid-dbgsym_1.5.5-trixie+_amd64.deb",
+        "url": "https://github.com/apptainer/apptainer/releases/download/v1.5.5/apptainer-suid-dbgsym_1.5.5-trixie%2B_amd64.deb",
+        "digest": "sha256:1cbb18ff0671f8a5b7fc4ba7c9b46af67e4fd8a6f9337025340ae9b41f061645"
+      },
+      {
+        "name": "apptainer-suid-dbgsym_1.5.5_amd64.deb",
+        "url": "https://github.com/apptainer/apptainer/releases/download/v1.5.5/apptainer-suid-dbgsym_1.5.5_amd64.deb",
+        "digest": "sha256:37253ccf4fd96682b8892e5d1f69187b2f09e04b8ca9fc9d8bd68f8d8cd92eb4"
+      },
+      {
+        "name": "apptainer-suid_1.5.5-trixie+_amd64.deb",
+        "url": "https://github.com/apptainer/apptainer/releases/download/v1.5.5/apptainer-suid_1.5.5-trixie%2B_amd64.deb",
+        "digest": "sha256:5b7bac9b2ff93f74e7423b9ba8afd2f99d044968e1f030e4776cdcf7af61a16b"
+      },
+      {
+        "name": "apptainer-suid_1.5.5_amd64.deb",
+        "url": "https://github.com/apptainer/apptainer/releases/download/v1.5.5/apptainer-suid_1.5.5_amd64.deb",
+        "digest": "sha256:d9dd6b26540f200f394465bf870dcf7c3a392effa57d5786f8682cde2dafa493"
+      },
+      {
+        "name": "apptainer_1.5.5-trixie+_amd64.deb",
+        "url": "https://github.com/apptainer/apptainer/releases/download/v1.5.5/apptainer_1.5.5-trixie%2B_amd64.deb",
+        "digest": "sha256:82a6e5ead21d3e19de522a9e0bbeb59958323e316dc9d019a128b0cc8e99d863"
+      },
+      {
+        "name": "apptainer_1.5.5_amd64.deb",
+        "url": "https://github.com/apptainer/apptainer/releases/download/v1.5.5/apptainer_1.5.5_amd64.deb",
+        "digest": "sha256:25095d3711504b3e8657dbb2e172ef8db9db43c4503d940c9c36b105db8dce77"
+      }
+    ]
+  }
+}

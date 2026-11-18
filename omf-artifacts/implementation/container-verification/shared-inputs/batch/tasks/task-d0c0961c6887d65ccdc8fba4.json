@@ -1,0 +1,18 @@
+{
+  "bundle_name": "speed-12-tau-1p0.tar.gz",
+  "bundle_sha256": "c385f5e93d15a1f8dac82045174ce7e4dd79ee016729ca71a09f25ea89d31fd0",
+  "case_id": "speed-12-tau-1p0",
+  "case_sha256": "da6c44a0eaa66731c85db7e58b0fde6e0cc075bfa5753311fd17aa61c5a89a5a",
+  "code_sha256": "9fede88594e735e8cd2ff2c799fd23fc98c8ffb664d2f85d9fca5af6e45007a2",
+  "parameters": {
+    "following_headway_s": 1.0,
+    "vehicle_max_speed_mps": 12.0
+  },
+  "purpose": "engineering_fixture",
+  "replicate": 0,
+  "schema_version": "1",
+  "seed": 20261117,
+  "seed_scope": "sumo_engine_only",
+  "task_id": "task-d0c0961c6887d65ccdc8fba4",
+  "wall_time_s": 3600
+}

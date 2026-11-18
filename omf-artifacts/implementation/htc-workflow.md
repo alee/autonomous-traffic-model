@@ -22,17 +22,16 @@ The root README provides `htc-demo`, `htc-plan`, `htc-local` and `htc-collect` c
 
 ## Build the worker image
 
-`deploy/htcondor/Dockerfile` pins the base image by digest and installs the exported runtime requirements with hashes plus the built project wheel. It includes the shared libraries required by the headless SUMO binary; no GUI/display service is started. The container runs as an unprivileged user, and all per-job writes go to scratch.
+`deploy/htcondor/Dockerfile` pins the base image by digest, builds the project wheel in a separate stage, and installs hash-pinned SUMO/GIS runtime requirements. It includes the shared libraries required by the headless SUMO binary; no GUI/display service is started. The container runs as an unprivileged user, and all per-job writes go to scratch.
 
 ```sh
-uv build --no-build-isolation --out-dir dist/htc
-docker build --platform linux/amd64 -f deploy/htcondor/Dockerfile -t autonomous-traffic-worker:0.1.0 .
+just image-build
 ```
 
 The runtime requirement export is derived from uv.lock, not independently edited:
 
 ```sh
-uv export --locked --extra sumo --no-dev --no-emit-project --format requirements-txt --output-file deploy/htcondor/requirements.lock
+uv export --locked --extra sumo --extra geo --no-dev --no-emit-project --format requirements-txt --output-file deploy/htcondor/requirements.lock
 ```
 
 Rebuild after source changes: the worker rejects a task if installed Python source fingerprints differ. Keep the resulting immutable image identity and native engine/runtime evidence with the batch. A local Docker image ID is not a remotely pullable registry manifest digest. Image publication/OSPool provisioning is a separate user-authorized action; no image is published by planning.
@@ -46,7 +45,7 @@ uv run --locked --extra sumo autonomous-traffic htc-plan --sweep path/to/sweep.j
 uv run --locked --extra sumo autonomous-traffic htc-preflight --batch runs/pool-batch
 ```
 
-The image argument rejects mutable tags. Without it, only a `.submit.in` template is written. The plan does not call condor_submit. `htc-preflight` checks batch digests and invokes only `condor_submit -dry-run` if the client exists and an image was configured; it reports absent/unrun syntax validation explicitly. On the intended access point, inspect the generated file and run:
+The image argument rejects mutable tags. Without an image URI or --sif input, only a `.submit.in` template is written. The plan does not call condor_submit. `htc-preflight` checks batch digests and invokes only `condor_submit -dry-run` if the client exists and an image was configured; it reports absent/unrun syntax validation explicitly. On the intended access point, inspect the generated file and run:
 
 ```sh
 cd runs/pool-batch
@@ -77,3 +76,7 @@ Required: scientifically reviewed GIS/network and physical initialization, compl
 - [HTCondor container universe](https://htcondor.readthedocs.io/en/23.0/users-manual/container-universe-jobs.html)
 
 Pool policy and access-point support must be checked at deployment; no live submission was made during setup.
+
+## Current Docker / Apptainer / just interface
+
+See container-workflow.md for the current source-built full application image, Docker Desktop workspace transport, SIF conversion, local and OSDF-backed HTCondor plans. In addition to immutable OCI references, --sif stages and checksums a local image; remote OSDF SIF references require a content-derived filename. No nested runtime launch occurs in the job wrapper. Earlier OCI-only instructions above describe the initial interface.

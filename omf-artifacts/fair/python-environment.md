@@ -26,3 +26,11 @@ Ruff formatting/import cleanup preserves the source function ASTs and the accept
 ## HTC environment extension
 
 The canonical stewardship scope now includes cross-object execution lineage; see fair-management-plan.md. `deploy/htcondor/requirements.lock` is a hash-pinned runtime-only export of uv.lock, not an independent dependency authority. The Dockerfile consumes a built project wheel and a digest-pinned Python base, with explicit SUMO native libraries. Apt package resolution is not fully archived, so rebuilding the recipe alone does not guarantee identical image bytes. Preserve and use an immutable published image digest for remote runs. A local image was exercised without networking; details and observed environment are in ../implementation/htc-verification-report.md. No image was published, and OSPool execution remains untested. Base Git revision and actual worktree code fingerprint are recorded separately; the new HTC code has not yet been committed.
+
+## Optional geographic preparation stack
+
+`geo` pins pyproj 3.7.2; its certifi dependency and distribution hashes are in uv.lock. GIS commands disable PROJ network access and use explicit metre-based projected CRS definitions. `doctor` inventories pyproj availability. Neither core demand materialization nor HTC workers require geo. Runtime worker requirements remain the SUMO-only export; rebuild a worker after package source changes because the source fingerprint covers the whole package. Prior container evidence remains historical for its recorded source fingerprint, not evidence of this new source image.
+
+## Shared application image (2026-11-18)
+
+The current runtime export includes both sumo and geo; the earlier SUMO-only worker export is historical. A separate build-requirements.lock export captures the dev/build environment used inside the Docker build stage. The Dockerfile now builds its own wheel from source; host dist/ wheels are unnecessary. Source OCI identity, SIF file digests, conversion receipts and per-workspace runtime receipts preserve execution lineage. See implementation/container-workflow.md and the canonical FAIR plan. No image publication or OSPool execution is implied by a local image digest.
