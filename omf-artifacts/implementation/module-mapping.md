@@ -14,3 +14,7 @@ Version: 0.1 | Date: 2026-11-17 | Authority: OMFB | Status: initial package slic
 | Experiments, robustness ensembles and scientific comparisons | Future experiment runner | No scientific policy comparison has run |
 
 Scientific authority remains ../abm-spec.md, ../initial-conditions.md, ../assumptions.md and the accepted Coronado benchmark. The package refactor changes execution structure, not those commitments.
+
+## Headless ensemble implementation
+
+Prepared network, explicit routes, optional fresh initial state and passenger ledger enter through `htc.inputs.validate_case`. `htc.plan.prepare` enumerates finite cases × replicates with immutable identities; `htc.worker.run_task` executes SUMO; `htc.collect.collect` reports every expected task. See htc-workflow.md and prepared-sumo-inputs.md. The earlier “future experiment runner” row now applies to scientific policy comparisons: generic native batch mechanics are implemented, while controller, fault and malicious-actor model adapters remain future work. The engine seed changes native runtime randomness only; demand and initial placement are frozen inputs.

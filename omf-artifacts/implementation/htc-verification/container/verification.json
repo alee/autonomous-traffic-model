@@ -1,0 +1,19 @@
+{
+  "command": [
+    "docker",
+    "run",
+    "--rm",
+    "-i",
+    "--network",
+    "none",
+    "autonomous-traffic-worker:0.1.0",
+    "/bin/sh",
+    "-c",
+    "set -eu; tar -xz --no-same-owner -C /work; autonomous-traffic doctor > /work/doctor.json; autonomous-traffic htc-local --batch /work/batch --jobs 2 > /work/execution.json; autonomous-traffic htc-collect --batch /work/batch --output /work/collected > /work/collection-summary.json; tar -czf - -C /work doctor.json execution.json collected batch/results"
+  ],
+  "network": "none",
+  "run_as": "traffic (uid 10001)",
+  "exit_code": 0,
+  "native_container_metrics_equal": true,
+  "execution_label_note": "htc-local labels the orchestration as local_native_not_container_or_pool; it was invoked inside the isolated Docker container by the command above. No pool execution occurred."
+}

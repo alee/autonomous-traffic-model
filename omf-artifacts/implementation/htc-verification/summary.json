@@ -1,0 +1,27 @@
+{
+  "purpose": "engineering_fixture_only",
+  "base_git_revision": "a59b4692072f3feca040daf8faafc15c1fa26732",
+  "worktree_state": "HTC implementation uncommitted at verification",
+  "code_sha256": "8391b0e99f86c9fa8a830ae71c52b08e0742b0e63cbf32b645b99c32742858ee",
+  "tests_passed": 22,
+  "native_executions": 16,
+  "container_executions": 8,
+  "serial_concurrent_and_container_metrics_equal": true,
+  "container_network": "none",
+  "container_user": "traffic:10001",
+  "python_native": "3.12.3",
+  "python_container": "3.12.16",
+  "sumo": "1.28.0",
+  "image_id": "sha256:c18e92d19b64d36415a5fde7af1935691a460e80cf64b3dc24565d4e89054d0d",
+  "image_published": false,
+  "condor_parser": "not_available",
+  "submitted_to_pool": false,
+  "wheel_sha256": "3169e676ee5f118228973f9b3c29789eda27ec65c7aaeaef1d41e6d8c87b143a",
+  "dockerfile_sha256": "797f8cff83ea4bcad033cf09f29ca61b5c3552f2b759f59698d1ceb7bf4eeefa",
+  "requirements_sha256": "1dc17f72bb7f8a6a8a9eaa31cd64aa778fff8abab24113b11bed02a4f7711c61",
+  "notes": [
+    "The retained wheel hash identifies the tested local build; build artifacts are ignored and not archived by this task.",
+    "Local image identity is not a registry pull reference.",
+    "Apt resolution is not immutable; preserve the built image to reproduce that environment."
+  ]
+}

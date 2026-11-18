@@ -30,7 +30,7 @@ packages = ["src/autonomous_traffic"]
 [tool.hatch.build.targets.sdist]
 include = [
   "/src", "/scripts", "/tests", "/README.md", "/pyproject.toml", "/uv.lock", "/.python-version",
-  "/omf-artifacts/implementation/scenarios/coronado-benchmark.json",
+  "/omf-artifacts/implementation/scenarios/coronado-benchmark.json", "/deploy",
 ]
 
 [tool.ruff]

@@ -46,3 +46,7 @@ The user selected Python + SUMO. README installation and CLI commands now reflec
 
 ## Pre-commit cleanup
 Current summaries were reconciled with the already-accepted benchmark and recorded engineering evidence; historical review sections are labeled. Python sources were formatted without changing function ASTs, accepted parameters or generated input bytes. README quality-check commands match the pinned Ruff development dependency. No scientific conclusion, model mechanism or benchmark scope was changed.
+
+## Headless ensemble workflow
+
+The README now links an implemented native-SUMO HTC workflow and its prepared-input contract. Sources are `htc/`, deploy/htcondor, htc-workflow.md, prepared-sumo-inputs.md and htc-verification-report.md. Synthetic speed/headway cases are engineering fixtures, not accepted city parameters. The narrative distinguishes headless execution mechanics from still-unimplemented coordination, fault models and empirical GIS initialization. No OSPool submission or city experiment is claimed.

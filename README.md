@@ -37,7 +37,7 @@ The initial state will be quiescent at 03:00, with individual actors generated f
 
 ## Current status
 
-This repository contains the scientific design, an accepted hypothetical Coronado benchmark, an installable Python package, a reproducible synthetic demand generator, and a small SUMO checkpoint test. **Coronado has not yet been simulated.** Official data-source metadata have been inspected, but road connectivity, trip demand, signal timing, and measurement coverage still need assessment. Initial numerical scenarios are hypothetical stress tests, not estimates of Phoenix traffic or malicious behavior.
+This repository contains the scientific design, an accepted hypothetical Coronado benchmark, an installable Python package, a reproducible synthetic demand generator, a small SUMO checkpoint test, and a headless ensemble runner. **Coronado has not yet been simulated.** Official data-source metadata have been inspected, but road connectivity, trip demand, signal timing, and measurement coverage still need assessment. Initial numerical scenarios are hypothetical stress tests, not estimates of Phoenix traffic or malicious behavior.
 
 The next stage is acquiring and auditing the Coronado road network, assigning routes to the generated requests, and completing the traffic controls and physical initialization. Calibration and independent evaluation will be needed before drawing conclusions about Phoenix. Collision-avoidance claims will require suitable vehicle trajectories and physical modeling. The current work supports research design and early engineering tests; real-world control and deployment safety remain outside its demonstrated scope.
 
@@ -80,3 +80,20 @@ uv run --locked --extra sumo autonomous-traffic checkpoint-probe --output runs/c
 Use `uv sync --locked` for the core-only environment. Include `--extra sumo` on uv commands that need the engine. The `doctor` command reports environment availability; it does not establish model readiness. The original scripts in `scripts/` remain compatible entry points, and `python -m autonomous_traffic` exposes the same CLI after installation.
 
 See the [implementation architecture](omf-artifacts/implementation/architecture.md), [package verification](omf-artifacts/implementation/python-stack-verification.md), and [environment notes](omf-artifacts/fair/python-environment.md). The earlier [feasibility report](omf-artifacts/implementation/feasibility-report.md) preserves the initial evidence and its limits.
+
+## Headless parameter sweeps
+
+The HTC runner executes independent prepared SUMO cases and engine-seed replicates. GIS conversion, physical initialization, demand construction and scientific review happen before workers run. Each job receives a checksummed input bundle and returns compact metrics and a run receipt. Native SUMO is headless; no display or worker-side package download is required.
+
+Exercise the complete workflow locally with a synthetic engineering fixture:
+
+```sh
+uv run --locked --extra sumo autonomous-traffic htc-demo --output runs/htc-inputs
+uv run --locked --extra sumo autonomous-traffic htc-plan --sweep runs/htc-inputs/sweep.json --output runs/htc-batch
+uv run --locked --extra sumo autonomous-traffic htc-local --batch runs/htc-batch --jobs 2
+uv run --locked --extra sumo autonomous-traffic htc-collect --batch runs/htc-batch --output runs/htc-collected
+```
+
+Without a worker image, planning emits `sweep.submit.in`, an explicitly non-submitting template. Supply an immutable worker image reference to render `sweep.submit`, and run the access-point preflight before any pilot submission. The demo varies native vehicle speed/headway settings on a synthetic grid; it does not replace the accepted Coronado initialization or implement reservation/coordinator policies.
+
+See the [HTCondor/OSPool workflow](omf-artifacts/implementation/htc-workflow.md), [prepared-GIS input contract](omf-artifacts/implementation/prepared-sumo-inputs.md), [worker Dockerfile](deploy/htcondor/Dockerfile), and [verification evidence](omf-artifacts/implementation/htc-verification-report.md). Scientific ranges and acceptance criteria remain explicit study decisions.

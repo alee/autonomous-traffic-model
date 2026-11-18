@@ -10,6 +10,7 @@ from pathlib import Path
 
 from . import __version__
 from .demand import materialize
+from .htc.api import add_commands, dispatch
 from .outputs import write_outputs
 
 
@@ -65,8 +66,11 @@ def main(argv=None):
     sub.add_parser(
         "doctor", help="Report package, Python and optional engine availability"
     )
+    add_commands(sub)
     args = parser.parse_args(argv)
     try:
+        if args.command.startswith("htc-"):
+            return dispatch(args)
         if args.command == "doctor":
             print(json.dumps(environment_report(), indent=2))
             return 0

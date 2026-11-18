@@ -6,7 +6,7 @@ Version: 0.1 | Date: 2026-11-17 | Authority: OMFB | Status: initial package impl
 
 The user selected Python for scenario/model logic, coordination policies, disruptions, experiments and metrics, with SUMO as the traffic engine. Python 3.12 is the initial interpreter line; the optional engine extra pins the four tested SUMO packages to 1.28.0. This is an implementation choice, not a scientific fitness claim. Julia/Agents.jl is not required by this realization. No additional general ABM framework is introduced.
 
-The currently implemented slice is synthetic demand generation and an engineering checkpoint fixture. The actual Phoenix network backend, policy algorithms and coupled model are not implemented. Numerical assumptions remain external in the accepted JSON benchmark; the package does not discover or overwrite them implicitly.
+The implemented slices are synthetic demand generation, an engineering checkpoint fixture, and a native-SUMO headless ensemble runner for explicitly prepared cases. The actual Phoenix network backend, policy algorithms and coupled model are not implemented. Numerical assumptions remain external in the accepted JSON benchmark; the package does not discover or overwrite them implicitly.
 
 ## Components
 
@@ -15,6 +15,9 @@ The currently implemented slice is synthetic demand generation and an engineerin
 - `outputs.py`: deterministic JSON/JSONL serialization, content manifest and conflicting-output rejection.
 - `cli.py` and `__main__.py`: explicit input/output/seed arguments, environment inventory, error reporting and optional engine dispatch. Console entry point is `autonomous-traffic`.
 - `sumo/probe.py`: explicit synthetic network/vehicle/control fixture, native plus external-adapter state save/restore and observed trace comparison. SUMO imports remain inside the invoked probe. This fixture does not provide a Phoenix traffic backend or implement coordination policies.
+- `htc/inputs.py` and `plan.py`: validate checksummed prepared cases, freeze factorial tasks and paired engine seeds, and render portable HTCondor transfers.
+- `htc/worker.py`, `local.py` and `collect.py`: isolated native engine execution, bounded local concurrency, compact result receipts and complete-cohort collection. No controller/TraCI policy adapter is implemented by this runner.
+- `htc/demo.py`: synthetic engineering inputs; never a source of city defaults. `deploy/htcondor/` captures the container build.
 - `scripts/`: compatibility launchers for the original commands, delegating to the same package code.
 - `tests/`: population/conservation/seed checks and CLI/output/error/compatibility checks. Actual engine continuation is an explicit integration probe, not a hidden unit-test dependency.
 

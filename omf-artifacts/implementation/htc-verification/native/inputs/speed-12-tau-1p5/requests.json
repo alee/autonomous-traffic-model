@@ -1,0 +1,20 @@
+[
+  {
+    "initial": false,
+    "person_count": 2,
+    "request_time_s": 0,
+    "vehicle_id": "vehicle-0"
+  },
+  {
+    "initial": false,
+    "person_count": 0,
+    "request_time_s": 4,
+    "vehicle_id": "vehicle-1"
+  },
+  {
+    "initial": false,
+    "person_count": 1,
+    "request_time_s": 155,
+    "vehicle_id": "vehicle-2"
+  }
+]

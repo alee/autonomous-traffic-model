@@ -1,0 +1,141 @@
+{
+  "axes": {
+    "following_headway_s": [
+      1.0,
+      1.5
+    ],
+    "vehicle_max_speed_mps": [
+      8.0,
+      12.0
+    ]
+  },
+  "base_seed": 20261117,
+  "code_sha256": "8391b0e99f86c9fa8a830ae71c52b08e0742b0e63cbf32b645b99c32742858ee",
+  "container_image": null,
+  "control_files": {
+    "jobs.tsv": "ae9626d2d764ac43484445c6bc6e07233499344d27fe9ae7a8536d23e346cfdd",
+    "sweep.submit.in": "0db7ca3b81969d1118860d1719e20941d10b569829c487e78918ed3f238b4bfa",
+    "worker.sh": "b899c00767587e98d1a8779849ee7345b4b228e36ed3fcd0145599ce1f9ab5b2"
+  },
+  "pool_preflight": "not_run",
+  "replicates": 2,
+  "resources": {
+    "cpus": 1,
+    "disk_mb": 4096,
+    "memory_mb": 2048,
+    "wall_time_s": 3600
+  },
+  "schema_version": "1",
+  "seed_scope": "sumo_engine_only",
+  "status": "prepared_not_submitted",
+  "submit_file": "sweep.submit.in",
+  "submit_rendered": false,
+  "sweep_id": "headless-fixture",
+  "task_count": 8,
+  "tasks": [
+    {
+      "bundle_name": "speed-12-tau-1p0.tar.gz",
+      "bundle_sha256": "8ecbbaa43ea4ba4b75cee57b98d5688a735f9e5402f92d1669bd6102bfd84f7a",
+      "case_id": "speed-12-tau-1p0",
+      "parameters": {
+        "following_headway_s": 1.0,
+        "vehicle_max_speed_mps": 12.0
+      },
+      "replicate": 0,
+      "seed": 20261117,
+      "task_id": "task-8776159b99d4db14cfb491c7",
+      "task_sha256": "4f2f5fc7b5894321eac064cf1f68e6c014995b5f3f39a49c776578816c2ce97e"
+    },
+    {
+      "bundle_name": "speed-12-tau-1p0.tar.gz",
+      "bundle_sha256": "8ecbbaa43ea4ba4b75cee57b98d5688a735f9e5402f92d1669bd6102bfd84f7a",
+      "case_id": "speed-12-tau-1p0",
+      "parameters": {
+        "following_headway_s": 1.0,
+        "vehicle_max_speed_mps": 12.0
+      },
+      "replicate": 1,
+      "seed": 20261118,
+      "task_id": "task-b242fbbf06fe0d8b13a0271d",
+      "task_sha256": "2d624a617c1fed40cf2d8bdd110d4cce96592d997ef886bec17c35bae419cb7d"
+    },
+    {
+      "bundle_name": "speed-8-tau-1p0.tar.gz",
+      "bundle_sha256": "87aa3d01f5c617e8e340ebd1074673394de351f57e76877cb76d44a8c9856616",
+      "case_id": "speed-8-tau-1p0",
+      "parameters": {
+        "following_headway_s": 1.0,
+        "vehicle_max_speed_mps": 8.0
+      },
+      "replicate": 0,
+      "seed": 20261117,
+      "task_id": "task-a2e26c1731e9528a881c878d",
+      "task_sha256": "47b8f11d604d0b31a5d244d877064de5b42e2dfffb45bd635d5f9412ecf4cd88"
+    },
+    {
+      "bundle_name": "speed-8-tau-1p0.tar.gz",
+      "bundle_sha256": "87aa3d01f5c617e8e340ebd1074673394de351f57e76877cb76d44a8c9856616",
+      "case_id": "speed-8-tau-1p0",
+      "parameters": {
+        "following_headway_s": 1.0,
+        "vehicle_max_speed_mps": 8.0
+      },
+      "replicate": 1,
+      "seed": 20261118,
+      "task_id": "task-79f72b0e8f9cf798ffa507c5",
+      "task_sha256": "3fd05b4d8aecbd5fffeac00f2e5c0c34fa091d1a3c6c5987bcf4b6c01e737e81"
+    },
+    {
+      "bundle_name": "speed-12-tau-1p5.tar.gz",
+      "bundle_sha256": "84c57282d73bee1979ab2cf3cb7d9e17ff46886c0f386168e23f8fac00991e1d",
+      "case_id": "speed-12-tau-1p5",
+      "parameters": {
+        "following_headway_s": 1.5,
+        "vehicle_max_speed_mps": 12.0
+      },
+      "replicate": 0,
+      "seed": 20261117,
+      "task_id": "task-b80f293dfc6481e84137e8f6",
+      "task_sha256": "e46205e2f4fc9d9a93c59aed663daef807e7058b42bcc111501118ca5f8650fc"
+    },
+    {
+      "bundle_name": "speed-12-tau-1p5.tar.gz",
+      "bundle_sha256": "84c57282d73bee1979ab2cf3cb7d9e17ff46886c0f386168e23f8fac00991e1d",
+      "case_id": "speed-12-tau-1p5",
+      "parameters": {
+        "following_headway_s": 1.5,
+        "vehicle_max_speed_mps": 12.0
+      },
+      "replicate": 1,
+      "seed": 20261118,
+      "task_id": "task-d0c5b9f8db0ca5bc917ed1a0",
+      "task_sha256": "227d8a08a3b41fb6251c5d83da8bd876625bbece11aa605ee2b8f39e1ff6251d"
+    },
+    {
+      "bundle_name": "speed-8-tau-1p5.tar.gz",
+      "bundle_sha256": "25d0a108036924ad137103bbf1c56a06b7b7f698793b952f92962b44f2123345",
+      "case_id": "speed-8-tau-1p5",
+      "parameters": {
+        "following_headway_s": 1.5,
+        "vehicle_max_speed_mps": 8.0
+      },
+      "replicate": 0,
+      "seed": 20261117,
+      "task_id": "task-1a48bfbc7cd3338c128d282c",
+      "task_sha256": "f6bc03d1536225bea48db348c9dcee73108a12fb32cecb2958fc8bca136fc1a2"
+    },
+    {
+      "bundle_name": "speed-8-tau-1p5.tar.gz",
+      "bundle_sha256": "25d0a108036924ad137103bbf1c56a06b7b7f698793b952f92962b44f2123345",
+      "case_id": "speed-8-tau-1p5",
+      "parameters": {
+        "following_headway_s": 1.5,
+        "vehicle_max_speed_mps": 8.0
+      },
+      "replicate": 1,
+      "seed": 20261118,
+      "task_id": "task-aaa508e59ac04a90593b9548",
+      "task_sha256": "4e92f436557b0c67bd4e12217c5f261e807c9d8934a94f8fe075ad13938774ab"
+    }
+  ]
+}

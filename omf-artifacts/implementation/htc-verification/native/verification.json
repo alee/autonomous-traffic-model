@@ -1,0 +1,7 @@
+{
+  "serial_parallel_metrics_equal": true,
+  "case_count": 4,
+  "replicates": 2,
+  "tasks_per_batch": 8,
+  "total_local_native_executions": 16
+}

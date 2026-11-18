@@ -2701,6 +2701,1158 @@
         "status": "consulted",
         "contract_authority": "omfb",
         "inventory_entry": "unknown"
+      },
+      {
+        "id": "input:htc-setup-request",
+        "logical_id": "input:htc-setup-request",
+        "type": "input",
+        "path_or_uri": "user-normalized-intent:prepare-headless-osg-style-parameter-exploration-for-gis-and-initialized-cases",
+        "version": "unknown",
+        "revision": "unknown",
+        "content_hash": "unknown",
+        "status": "consulted",
+        "contract_authority": "user",
+        "inventory_entry": "unknown"
+      },
+      {
+        "id": "source:htc-omfb",
+        "logical_id": "source:htc-omfb",
+        "type": "methodological-source",
+        "path_or_uri": "/home/alllee/.agents/skills/omfb/SKILL.md",
+        "version": "unknown",
+        "revision": "unknown",
+        "content_hash": "sha256:53906e64717e5b61358f616e2f130e2bf2a71b741026f8f44d50bdd07099a074",
+        "status": "consulted",
+        "contract_authority": "omfb",
+        "inventory_entry": "unknown"
+      },
+      {
+        "id": "source:htc-ospool",
+        "logical_id": "source:htc-ospool",
+        "type": "methodological-source",
+        "path_or_uri": "/home/alllee/.agents/skills/ospool/SKILL.md",
+        "version": "unknown",
+        "revision": "unknown",
+        "content_hash": "sha256:c6ff70f9fd378568ea72561ed672a6d81fc43a4908056f001a4c88e2ac3fd4fd",
+        "status": "consulted",
+        "contract_authority": "ospool",
+        "inventory_entry": "unknown"
+      },
+      {
+        "id": "source:htc-fair",
+        "logical_id": "source:htc-fair",
+        "type": "methodological-source",
+        "path_or_uri": "/home/alllee/.agents/skills/fair/SKILL.md",
+        "version": "unknown",
+        "revision": "unknown",
+        "content_hash": "sha256:e2d420dae19cd79d97425ce69ad6a67ce1383901cf1dac29ae0333ae794cd2f9",
+        "status": "consulted",
+        "contract_authority": "fair",
+        "inventory_entry": "unknown"
+      },
+      {
+        "id": "source:htc-document",
+        "logical_id": "source:htc-document",
+        "type": "methodological-source",
+        "path_or_uri": "/home/alllee/.agents/skills/document/SKILL.md",
+        "version": "unknown",
+        "revision": "unknown",
+        "content_hash": "sha256:3ca35883c4f0d047ae8e8f8b58abf0f19866b42e082c577db2cbb5085ea242a0",
+        "status": "consulted",
+        "contract_authority": "document",
+        "inventory_entry": "unknown"
+      },
+      {
+        "id": "software:-dockerignore@htc.1",
+        "logical_id": "software:-dockerignore",
+        "type": "software",
+        "path_or_uri": ".dockerignore",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:391f0f06aa49b27a741d105fb8265e1f1ef159ab07605e43b366c25bcc822a6d",
+        "status": "current",
+        "contract_authority": "fair",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#software"
+      },
+      {
+        "id": "artifact:root-readme@htc.1",
+        "logical_id": "artifact:root-readme",
+        "type": "artifact",
+        "path_or_uri": "README.md",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:20423fc7734e92570d02b3a0abf245a9cfdef4c1b9ab8bd1af7b8924eb017107",
+        "status": "current",
+        "contract_authority": "document",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#model"
+      },
+      {
+        "id": "software:deploy-htcondor-Dockerfile@htc.1",
+        "logical_id": "software:deploy-htcondor-Dockerfile",
+        "type": "software",
+        "path_or_uri": "deploy/htcondor/Dockerfile",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:797f8cff83ea4bcad033cf09f29ca61b5c3552f2b759f59698d1ceb7bf4eeefa",
+        "status": "current",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#runtime-image"
+      },
+      {
+        "id": "software:deploy-htcondor-requirements-lock@htc.1",
+        "logical_id": "software:deploy-htcondor-requirements-lock",
+        "type": "software",
+        "path_or_uri": "deploy/htcondor/requirements.lock",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:1dc17f72bb7f8a6a8a9eaa31cd64aa778fff8abab24113b11bed02a4f7711c61",
+        "status": "current",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#runtime-image"
+      },
+      {
+        "id": "artifact:readme-source-notes@htc.1",
+        "logical_id": "artifact:readme-source-notes",
+        "type": "artifact",
+        "path_or_uri": "omf-artifacts/document/readme-source-notes.md",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:db1b82f6e05d036f053bc346e9158c1378972828aff1ebda925583abdd1602d4",
+        "status": "current",
+        "contract_authority": "document",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#model"
+      },
+      {
+        "id": "artifact:omf-artifacts-fair-fair-management-plan-md@htc.1",
+        "logical_id": "artifact:omf-artifacts-fair-fair-management-plan-md",
+        "type": "artifact",
+        "path_or_uri": "omf-artifacts/fair/fair-management-plan.md",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:3ac347efd57f6a70c7021d1e57e767cdf4d54db9e3a1212b4217c6e0a99b3cab",
+        "status": "current",
+        "contract_authority": "fair",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-workflow"
+      },
+      {
+        "id": "artifact:omf-artifacts-fair-python-environment-md@htc.1",
+        "logical_id": "artifact:omf-artifacts-fair-python-environment-md",
+        "type": "artifact",
+        "path_or_uri": "omf-artifacts/fair/python-environment.md",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:5895e07816153859f463f47bb3038375f66cf693a9a9c458055b015528d322c1",
+        "status": "current",
+        "contract_authority": "fair",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-workflow"
+      },
+      {
+        "id": "artifact:omf-artifacts-implementation-architecture-md@htc.1",
+        "logical_id": "artifact:omf-artifacts-implementation-architecture-md",
+        "type": "artifact",
+        "path_or_uri": "omf-artifacts/implementation/architecture.md",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:7ee6911ca95571bebf164c36934a1f3c87ce5b238a24678fa7400d454eec26e0",
+        "status": "current",
+        "contract_authority": "omfb",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-workflow"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-1a48bfbc7cd3338c128d282c-tar-gz@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-1a48bfbc7cd3338c128d282c-tar-gz",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/container/batch/results/task-1a48bfbc7cd3338c128d282c.tar.gz",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:2463619f373e0525ee1a92dc6aab08605b34ebc37e820f477d0e06fc1f07b1c9",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-79f72b0e8f9cf798ffa507c5-tar-gz@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-79f72b0e8f9cf798ffa507c5-tar-gz",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/container/batch/results/task-79f72b0e8f9cf798ffa507c5.tar.gz",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:beb10c75d1e1b611e36305a31b8fe2f714e5caac345be040cc5d20a1c198c272",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-8776159b99d4db14cfb491c7-tar-gz@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-8776159b99d4db14cfb491c7-tar-gz",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/container/batch/results/task-8776159b99d4db14cfb491c7.tar.gz",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:59970e219e2db98eede125eba3ebc121634571193925d9812b1179a3e440c3df",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-a2e26c1731e9528a881c878d-tar-gz@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-a2e26c1731e9528a881c878d-tar-gz",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/container/batch/results/task-a2e26c1731e9528a881c878d.tar.gz",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:4b9dcb08aca8b97fc63d01dd3db2c072a0f8ed4c2f23d1947793cc30679e76e4",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-aaa508e59ac04a90593b9548-tar-gz@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-aaa508e59ac04a90593b9548-tar-gz",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/container/batch/results/task-aaa508e59ac04a90593b9548.tar.gz",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:c0f52d74292d8fecf1da12677e58f14b386abed567ad364df3469412652594af",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-b242fbbf06fe0d8b13a0271d-tar-gz@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-b242fbbf06fe0d8b13a0271d-tar-gz",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/container/batch/results/task-b242fbbf06fe0d8b13a0271d.tar.gz",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:63946b2456062bbfddb0c0f6f28618fa9dcdfe3e49423aa291475e3069b9f471",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-b80f293dfc6481e84137e8f6-tar-gz@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-b80f293dfc6481e84137e8f6-tar-gz",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/container/batch/results/task-b80f293dfc6481e84137e8f6.tar.gz",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:896cf40b3eaa05f7dc14a818a4676e4b00ba09de93e92442ea8bb9fe57a1c079",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-d0c5b9f8db0ca5bc917ed1a0-tar-gz@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-d0c5b9f8db0ca5bc917ed1a0-tar-gz",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/container/batch/results/task-d0c5b9f8db0ca5bc917ed1a0.tar.gz",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:4acdcf4d7350bf10c28cd1da5b0ada703a101e0b8566413fad9861d7c2d4838b",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-container-collected-collection-json@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-container-collected-collection-json",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/container/collected/collection.json",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:5c6907d718bd7eb4e3fa54f0bfd7bcbeeecec0123e26516df33e9d9a217bf675",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-container-collected-metrics-csv@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-container-collected-metrics-csv",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/container/collected/metrics.csv",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:43c9e8ce5d80475168823bd175cadba1e76842857cb07d8a4dc2495270426690",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-container-doctor-json@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-container-doctor-json",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/container/doctor.json",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:59929f56764121a4eebbb6d819b21194f5fe01b73bf0529736483e19f75d8e3a",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-container-execution-json@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-container-execution-json",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/container/execution.json",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:b4437370e78aa149f6882fe60e86c48ad41345fe0fa004fd37313e17ba74832f",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-container-image-identity-json@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-container-image-identity-json",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/container/image-identity.json",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:94fdc45b4fba0fbdb88fa7228b722f57172ddf643480a9620157de1724fbbd6d",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-container-verification-json@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-container-verification-json",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/container/verification.json",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:98600abbec2f5c89823d7fa57345b6b9850c425f5e7401b8b4597a0db6551629",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-files-manifest-json@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-files-manifest-json",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/files-manifest.json",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:2d16f872e7caef5c7f76ec26a9d9945b0e57c5b345db0a6dc464c93d225666c8",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-bundles-speed-12-tau-1p0-tar-gz@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-bundles-speed-12-tau-1p0-tar-gz",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/batch/bundles/speed-12-tau-1p0.tar.gz",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:8ecbbaa43ea4ba4b75cee57b98d5688a735f9e5402f92d1669bd6102bfd84f7a",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-bundles-speed-12-tau-1p5-tar-gz@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-bundles-speed-12-tau-1p5-tar-gz",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/batch/bundles/speed-12-tau-1p5.tar.gz",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:84c57282d73bee1979ab2cf3cb7d9e17ff46886c0f386168e23f8fac00991e1d",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-bundles-speed-8-tau-1p0-tar-gz@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-bundles-speed-8-tau-1p0-tar-gz",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/batch/bundles/speed-8-tau-1p0.tar.gz",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:87aa3d01f5c617e8e340ebd1074673394de351f57e76877cb76d44a8c9856616",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-bundles-speed-8-tau-1p5-tar-gz@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-bundles-speed-8-tau-1p5-tar-gz",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/batch/bundles/speed-8-tau-1p5.tar.gz",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:25d0a108036924ad137103bbf1c56a06b7b7f698793b952f92962b44f2123345",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-jobs-tsv@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-jobs-tsv",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/batch/jobs.tsv",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:ae9626d2d764ac43484445c6bc6e07233499344d27fe9ae7a8536d23e346cfdd",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-plan-json@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-plan-json",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/batch/plan.json",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:eb51e8ca5b1f39c737cf90326f9386002315e331fd5fd10971dd29afc43852b2",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-1a48bfbc7cd3338c128d282c-tar-gz@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-1a48bfbc7cd3338c128d282c-tar-gz",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/batch/results/task-1a48bfbc7cd3338c128d282c.tar.gz",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:947a8ea21207e937d2617407a98ab2e9e9efaef4d9f0c888a0d2aea2ce0c30f4",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-79f72b0e8f9cf798ffa507c5-tar-gz@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-79f72b0e8f9cf798ffa507c5-tar-gz",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/batch/results/task-79f72b0e8f9cf798ffa507c5.tar.gz",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:6e9ba444851168300f3c41a3e6e0b9818b630ae5c2c590d0cdbc51eff04bfb80",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-8776159b99d4db14cfb491c7-tar-gz@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-8776159b99d4db14cfb491c7-tar-gz",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/batch/results/task-8776159b99d4db14cfb491c7.tar.gz",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:a47a995e7a44a1bf5f235b82f9e57e589efd5e91efb550c6f4fb232fc0ecbca6",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-a2e26c1731e9528a881c878d-tar-gz@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-a2e26c1731e9528a881c878d-tar-gz",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/batch/results/task-a2e26c1731e9528a881c878d.tar.gz",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:901d60c0f02ce69459f9b5f2ad17ff4fe87d7ff7d183aa1e8135a20dc732afbe",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-aaa508e59ac04a90593b9548-tar-gz@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-aaa508e59ac04a90593b9548-tar-gz",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/batch/results/task-aaa508e59ac04a90593b9548.tar.gz",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:51455520e90a4eeb768972934d941f343fe709e672d0eb7ebee0b5eb68b3fc70",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-b242fbbf06fe0d8b13a0271d-tar-gz@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-b242fbbf06fe0d8b13a0271d-tar-gz",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/batch/results/task-b242fbbf06fe0d8b13a0271d.tar.gz",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:0eec24391905b77074e2ca3406d7311e26044279d0da9ec2e645355f24043ff3",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-b80f293dfc6481e84137e8f6-tar-gz@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-b80f293dfc6481e84137e8f6-tar-gz",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/batch/results/task-b80f293dfc6481e84137e8f6.tar.gz",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:0ce2c3cdfc3ba1534052fe0e21e64865e3a9e989b5fbe9295f28c928b85caa56",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-d0c5b9f8db0ca5bc917ed1a0-tar-gz@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-d0c5b9f8db0ca5bc917ed1a0-tar-gz",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/batch/results/task-d0c5b9f8db0ca5bc917ed1a0.tar.gz",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:d54ee2c1e0ca356b9d3d54fed357ef04953e6730a1ce9b7c4934b3a12144d001",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-sweep-submit-in@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-sweep-submit-in",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/batch/sweep.submit.in",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:0db7ca3b81969d1118860d1719e20941d10b569829c487e78918ed3f238b4bfa",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-1a48bfbc7cd3338c128d282c-json@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-1a48bfbc7cd3338c128d282c-json",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/batch/tasks/task-1a48bfbc7cd3338c128d282c.json",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:f6bc03d1536225bea48db348c9dcee73108a12fb32cecb2958fc8bca136fc1a2",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-79f72b0e8f9cf798ffa507c5-json@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-79f72b0e8f9cf798ffa507c5-json",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/batch/tasks/task-79f72b0e8f9cf798ffa507c5.json",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:3fd05b4d8aecbd5fffeac00f2e5c0c34fa091d1a3c6c5987bcf4b6c01e737e81",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-8776159b99d4db14cfb491c7-json@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-8776159b99d4db14cfb491c7-json",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/batch/tasks/task-8776159b99d4db14cfb491c7.json",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:4f2f5fc7b5894321eac064cf1f68e6c014995b5f3f39a49c776578816c2ce97e",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-a2e26c1731e9528a881c878d-json@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-a2e26c1731e9528a881c878d-json",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/batch/tasks/task-a2e26c1731e9528a881c878d.json",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:47b8f11d604d0b31a5d244d877064de5b42e2dfffb45bd635d5f9412ecf4cd88",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-aaa508e59ac04a90593b9548-json@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-aaa508e59ac04a90593b9548-json",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/batch/tasks/task-aaa508e59ac04a90593b9548.json",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:4e92f436557b0c67bd4e12217c5f261e807c9d8934a94f8fe075ad13938774ab",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-b242fbbf06fe0d8b13a0271d-json@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-b242fbbf06fe0d8b13a0271d-json",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/batch/tasks/task-b242fbbf06fe0d8b13a0271d.json",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:2d624a617c1fed40cf2d8bdd110d4cce96592d997ef886bec17c35bae419cb7d",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-b80f293dfc6481e84137e8f6-json@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-b80f293dfc6481e84137e8f6-json",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/batch/tasks/task-b80f293dfc6481e84137e8f6.json",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:e46205e2f4fc9d9a93c59aed663daef807e7058b42bcc111501118ca5f8650fc",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-d0c5b9f8db0ca5bc917ed1a0-json@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-d0c5b9f8db0ca5bc917ed1a0-json",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/batch/tasks/task-d0c5b9f8db0ca5bc917ed1a0.json",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:227d8a08a3b41fb6251c5d83da8bd876625bbece11aa605ee2b8f39e1ff6251d",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-worker-sh@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-batch-worker-sh",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/batch/worker.sh",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:b899c00767587e98d1a8779849ee7345b4b228e36ed3fcd0145599ce1f9ab5b2",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-collection-collection-json@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-collection-collection-json",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/collection/collection.json",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:5c6907d718bd7eb4e3fa54f0bfd7bcbeeecec0123e26516df33e9d9a217bf675",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-collection-metrics-csv@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-collection-metrics-csv",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/collection/metrics.csv",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:43c9e8ce5d80475168823bd175cadba1e76842857cb07d8a4dc2495270426690",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-grid-net-xml@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-grid-net-xml",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/inputs/grid.net.xml",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:3a2b5f1f98b222937bc0b53b725e51718bb8b500c1b6d52b70894aa3db74d479",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#prepared-fixture"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p0-case-json@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p0-case-json",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/inputs/speed-12-tau-1p0/case.json",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:9f5fb9ab3c53fa66d56369bf901c1bb3bc62bcc65fc54dc24874c25bb2a15641",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#prepared-fixture"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p0-network-net-xml@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p0-network-net-xml",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/inputs/speed-12-tau-1p0/network.net.xml",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:3a2b5f1f98b222937bc0b53b725e51718bb8b500c1b6d52b70894aa3db74d479",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#prepared-fixture"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p0-requests-json@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p0-requests-json",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/inputs/speed-12-tau-1p0/requests.json",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:d13a65cd05938a877256c0851f90c7472918114686693fb06faf4e529e1342af",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#prepared-fixture"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p0-routes-xml@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p0-routes-xml",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/inputs/speed-12-tau-1p0/routes.xml",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:1296e8d11524ef9a931f3a2a256cc03cfd417917c147e18530493e2301f75ae4",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#prepared-fixture"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p5-case-json@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p5-case-json",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/inputs/speed-12-tau-1p5/case.json",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:c9ebfde5b654ca7fcc9bfada7467de653b8f742ab94dc19f55fbb62e55cbe34b",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#prepared-fixture"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p5-network-net-xml@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p5-network-net-xml",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/inputs/speed-12-tau-1p5/network.net.xml",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:3a2b5f1f98b222937bc0b53b725e51718bb8b500c1b6d52b70894aa3db74d479",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#prepared-fixture"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p5-requests-json@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p5-requests-json",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/inputs/speed-12-tau-1p5/requests.json",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:d13a65cd05938a877256c0851f90c7472918114686693fb06faf4e529e1342af",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#prepared-fixture"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p5-routes-xml@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p5-routes-xml",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/inputs/speed-12-tau-1p5/routes.xml",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:efc5771a9e124626f140a0ab7b6067b3a1d6dd0d0c3d4c19c22873440d2e022b",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#prepared-fixture"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p0-case-json@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p0-case-json",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/inputs/speed-8-tau-1p0/case.json",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:a92bcd3f1b58815b35e771ae62b3c42189e2d58efd76d6771b6175bd978462a1",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#prepared-fixture"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p0-network-net-xml@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p0-network-net-xml",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/inputs/speed-8-tau-1p0/network.net.xml",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:3a2b5f1f98b222937bc0b53b725e51718bb8b500c1b6d52b70894aa3db74d479",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#prepared-fixture"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p0-requests-json@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p0-requests-json",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/inputs/speed-8-tau-1p0/requests.json",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:d13a65cd05938a877256c0851f90c7472918114686693fb06faf4e529e1342af",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#prepared-fixture"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p0-routes-xml@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p0-routes-xml",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/inputs/speed-8-tau-1p0/routes.xml",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:f931288fb1c4a8f6ee8a0d27ffe4558aad50a10f72c9ddb676987e730f19b74c",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#prepared-fixture"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p5-case-json@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p5-case-json",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/inputs/speed-8-tau-1p5/case.json",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:1e0fd0b46c2e31f12cccbdc4c67b351ad015311c6f0fd615f61428097fddc7b8",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#prepared-fixture"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p5-network-net-xml@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p5-network-net-xml",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/inputs/speed-8-tau-1p5/network.net.xml",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:3a2b5f1f98b222937bc0b53b725e51718bb8b500c1b6d52b70894aa3db74d479",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#prepared-fixture"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p5-requests-json@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p5-requests-json",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/inputs/speed-8-tau-1p5/requests.json",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:d13a65cd05938a877256c0851f90c7472918114686693fb06faf4e529e1342af",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#prepared-fixture"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p5-routes-xml@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p5-routes-xml",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/inputs/speed-8-tau-1p5/routes.xml",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:5f8fadd39d58839d10c930ae06192ab8883d8eb3de8da957143572f2604293f1",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#prepared-fixture"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-sweep-json@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-sweep-json",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/inputs/sweep.json",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:5131e5e1d3692089dcb88ec93115b831286e3a5ab121b08133f8ee64b57ef756",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#prepared-fixture"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-serial-metrics-csv@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-serial-metrics-csv",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/serial-metrics.csv",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:43c9e8ce5d80475168823bd175cadba1e76842857cb07d8a4dc2495270426690",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-native-verification-json@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-native-verification-json",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/native/verification.json",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:7198010c0c302a32aadad4db2144e9602052e0d40dbc2b6db20599256694bbe1",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-summary-json@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-summary-json",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/summary.json",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:bae70b6e9aa268d7deea8735f1c7475cd46d29062266b0eebc4d1758ad05154c",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "dataset:omf-artifacts-implementation-htc-verification-tests-log@htc.1",
+        "logical_id": "dataset:omf-artifacts-implementation-htc-verification-tests-log",
+        "type": "dataset",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification/tests.log",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:44dcf01b5cf76fadc794d7d8af98e039c4b4f2577a5d7dfba34f90986d1eb24d",
+        "status": "observed",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-results"
+      },
+      {
+        "id": "artifact:omf-artifacts-implementation-htc-verification-report-md@htc.1",
+        "logical_id": "artifact:omf-artifacts-implementation-htc-verification-report-md",
+        "type": "artifact",
+        "path_or_uri": "omf-artifacts/implementation/htc-verification-report.md",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:ecefb58d3e3eaa95fd32a26a2ab88ac5d3a09f4e178f2febaab38ecfb96b75a1",
+        "status": "current",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-workflow"
+      },
+      {
+        "id": "workflow:omf-artifacts-implementation-htc-workflow-md@htc.1",
+        "logical_id": "workflow:omf-artifacts-implementation-htc-workflow-md",
+        "type": "workflow",
+        "path_or_uri": "omf-artifacts/implementation/htc-workflow.md",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:7549bca0f1a55b87ba0cfbf131e210ca1ecf05798ac1c45a6e966bf6dc19e751",
+        "status": "current",
+        "contract_authority": "ospool",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-workflow"
+      },
+      {
+        "id": "artifact:omf-artifacts-implementation-module-mapping-md@htc.1",
+        "logical_id": "artifact:omf-artifacts-implementation-module-mapping-md",
+        "type": "artifact",
+        "path_or_uri": "omf-artifacts/implementation/module-mapping.md",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:802714f3bfaceee2b4f1485e60a91c2e6f6bc101ecf4ee93beafe6e47d9cfb67",
+        "status": "current",
+        "contract_authority": "omfb",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-workflow"
+      },
+      {
+        "id": "artifact:initialization-plan-md@htc.1",
+        "logical_id": "artifact:initialization-plan-md",
+        "type": "artifact",
+        "path_or_uri": "omf-artifacts/implementation/plan.md",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:660c74b17c34d4d0d0c7dd2ad61e1402b461fb04cb29789eeab72197f2aa8c7b",
+        "status": "current",
+        "contract_authority": "omfb",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-workflow"
+      },
+      {
+        "id": "artifact:omf-artifacts-implementation-prepared-sumo-inputs-md@htc.1",
+        "logical_id": "artifact:omf-artifacts-implementation-prepared-sumo-inputs-md",
+        "type": "artifact",
+        "path_or_uri": "omf-artifacts/implementation/prepared-sumo-inputs.md",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:703b6b40b42aeda6e1a823f6641cf7480a5909d2e62b328bdc8f693142eb27e0",
+        "status": "current",
+        "contract_authority": "omfb",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-workflow"
+      },
+      {
+        "id": "artifact:initialization-verification-plan-md@htc.1",
+        "logical_id": "artifact:initialization-verification-plan-md",
+        "type": "artifact",
+        "path_or_uri": "omf-artifacts/implementation/verification-plan.md",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:d1c934d41661accfd19be890e7a58e5cea933a4dc7dd0f794cdd36b842002ef7",
+        "status": "current",
+        "contract_authority": "omfb",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#htc-workflow"
+      },
+      {
+        "id": "artifact:pyproject-toml@htc.1",
+        "logical_id": "artifact:pyproject-toml",
+        "type": "software",
+        "path_or_uri": "pyproject.toml",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:f6755697afe10453f9ae73d384f16cc8320e05e1c61d289ed0828ec0958b31d3",
+        "status": "current",
+        "contract_authority": "fair",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#software"
+      },
+      {
+        "id": "software:src-autonomous_traffic-cli-py@htc.1",
+        "logical_id": "software:src-autonomous_traffic-cli-py",
+        "type": "software",
+        "path_or_uri": "src/autonomous_traffic/cli.py",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:a3be158717696a7272a527c9dbeeea08d616e7944ace23e9921c568db053b801",
+        "status": "current",
+        "contract_authority": "omfb",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#software"
+      },
+      {
+        "id": "software:src-autonomous_traffic-htc-__init__-py@htc.1",
+        "logical_id": "software:src-autonomous_traffic-htc-__init__-py",
+        "type": "software",
+        "path_or_uri": "src/autonomous_traffic/htc/__init__.py",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:00b19295aa088685d277eb82da2650e3736f6461cbc87e4b3b928246f0fa5be5",
+        "status": "current",
+        "contract_authority": "omfb",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#software"
+      },
+      {
+        "id": "software:src-autonomous_traffic-htc-api-py@htc.1",
+        "logical_id": "software:src-autonomous_traffic-htc-api-py",
+        "type": "software",
+        "path_or_uri": "src/autonomous_traffic/htc/api.py",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:949e486bbc8d23b325b85027bbcccc906437ab918d3302e3e99fe16cf86594c9",
+        "status": "current",
+        "contract_authority": "omfb",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#software"
+      },
+      {
+        "id": "software:src-autonomous_traffic-htc-collect-py@htc.1",
+        "logical_id": "software:src-autonomous_traffic-htc-collect-py",
+        "type": "software",
+        "path_or_uri": "src/autonomous_traffic/htc/collect.py",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:a0bc235aace3246b2143d31b1145ef67cfee33b5638fed8d70eeeae0183579cd",
+        "status": "current",
+        "contract_authority": "omfb",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#software"
+      },
+      {
+        "id": "software:src-autonomous_traffic-htc-demo-py@htc.1",
+        "logical_id": "software:src-autonomous_traffic-htc-demo-py",
+        "type": "software",
+        "path_or_uri": "src/autonomous_traffic/htc/demo.py",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:1dee3d7f07a1217ae4855be81ee46758a3ff467074a571500168a91a17b5c69b",
+        "status": "current",
+        "contract_authority": "omfb",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#software"
+      },
+      {
+        "id": "software:src-autonomous_traffic-htc-inputs-py@htc.1",
+        "logical_id": "software:src-autonomous_traffic-htc-inputs-py",
+        "type": "software",
+        "path_or_uri": "src/autonomous_traffic/htc/inputs.py",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:0a7d4a86d7b64cfb1c22378511b27b04a91283773004df8026b0eb11511adabd",
+        "status": "current",
+        "contract_authority": "omfb",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#software"
+      },
+      {
+        "id": "software:src-autonomous_traffic-htc-local-py@htc.1",
+        "logical_id": "software:src-autonomous_traffic-htc-local-py",
+        "type": "software",
+        "path_or_uri": "src/autonomous_traffic/htc/local.py",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:958e91f8bd3db51045a6f09ffad7aec3df569da598fb55390d62bea4c8b6b8ad",
+        "status": "current",
+        "contract_authority": "omfb",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#software"
+      },
+      {
+        "id": "software:src-autonomous_traffic-htc-plan-py@htc.1",
+        "logical_id": "software:src-autonomous_traffic-htc-plan-py",
+        "type": "software",
+        "path_or_uri": "src/autonomous_traffic/htc/plan.py",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:0eea4b29be01afbc1064226a9f14cea6950b56f78aba7c14c688022a62f87166",
+        "status": "current",
+        "contract_authority": "omfb",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#software"
+      },
+      {
+        "id": "software:src-autonomous_traffic-htc-worker-py@htc.1",
+        "logical_id": "software:src-autonomous_traffic-htc-worker-py",
+        "type": "software",
+        "path_or_uri": "src/autonomous_traffic/htc/worker.py",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:8fc8558df4e5875a7e86869780cbf8dea094b6d3c040f4516e7834dd177a97cf",
+        "status": "current",
+        "contract_authority": "omfb",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#software"
+      },
+      {
+        "id": "software:tests-test_htc-py@htc.1",
+        "logical_id": "software:tests-test_htc-py",
+        "type": "software",
+        "path_or_uri": "tests/test_htc.py",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:8393e07c33c6185d111bc49656093c6dc046c742b4d83a8e79a02c1da7dcc7b0",
+        "status": "current",
+        "contract_authority": "omfb",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#software"
+      },
+      {
+        "id": "software:tests-test_htc_integration-py@htc.1",
+        "logical_id": "software:tests-test_htc_integration-py",
+        "type": "software",
+        "path_or_uri": "tests/test_htc_integration.py",
+        "version": "htc.1",
+        "revision": "unknown",
+        "content_hash": "sha256:5e326f1f2ffff66c82b5a521da2185b2489a6e44c78e490a35293ecf69ca7aff",
+        "status": "current",
+        "contract_authority": "omfb",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#software"
+      },
+      {
+        "id": "input:htc-cleanup-commit",
+        "logical_id": "input:htc-cleanup-commit",
+        "type": "input",
+        "path_or_uri": "user-normalized-intent:cleanup-and-commit-prepared-htc-work",
+        "version": "unknown",
+        "revision": "unknown",
+        "content_hash": "unknown",
+        "status": "consulted",
+        "contract_authority": "user",
+        "inventory_entry": "unknown"
+      },
+      {
+        "id": "software:git-evidence-attributes@cleanup.1",
+        "logical_id": "software:git-evidence-attributes",
+        "type": "software",
+        "path_or_uri": ".gitattributes",
+        "version": "cleanup.1",
+        "revision": "unknown",
+        "content_hash": "sha256:5e9bba95c9b6e870b9b08aa47b2a4c5abc7224501eac4842efd5f57ac2e4721a",
+        "status": "current",
+        "contract_authority": "fair",
+        "inventory_entry": "omf-artifacts/fair/fair-management-plan.md#software"
       }
     ],
     "agents": [
@@ -2847,6 +3999,42 @@
         "release": "unknown",
         "revision": "unknown",
         "content_hash": "sha256:53906e64717e5b61358f616e2f130e2bf2a71b741026f8f44d50bdd07099a074"
+      },
+      {
+        "id": "skill:htc-omfb",
+        "type": "skill",
+        "name": "omfb",
+        "source": "/home/alllee/.agents/skills/omfb/SKILL.md",
+        "release": "unknown",
+        "revision": "unknown",
+        "content_hash": "sha256:53906e64717e5b61358f616e2f130e2bf2a71b741026f8f44d50bdd07099a074"
+      },
+      {
+        "id": "skill:htc-ospool",
+        "type": "skill",
+        "name": "ospool",
+        "source": "/home/alllee/.agents/skills/ospool/SKILL.md",
+        "release": "unknown",
+        "revision": "unknown",
+        "content_hash": "sha256:c6ff70f9fd378568ea72561ed672a6d81fc43a4908056f001a4c88e2ac3fd4fd"
+      },
+      {
+        "id": "skill:htc-fair",
+        "type": "skill",
+        "name": "fair",
+        "source": "/home/alllee/.agents/skills/fair/SKILL.md",
+        "release": "unknown",
+        "revision": "unknown",
+        "content_hash": "sha256:e2d420dae19cd79d97425ce69ad6a67ce1383901cf1dac29ae0333ae794cd2f9"
+      },
+      {
+        "id": "skill:htc-document",
+        "type": "skill",
+        "name": "document",
+        "source": "/home/alllee/.agents/skills/document/SKILL.md",
+        "release": "unknown",
+        "revision": "unknown",
+        "content_hash": "sha256:3ca35883c4f0d047ae8e8f8b58abf0f19866b42e082c577db2cbb5085ea242a0"
       }
     ],
     "activities": [
@@ -4685,6 +5873,491 @@
           }
         ],
         "user_authorized_exception": null
+      },
+      {
+        "id": "activity:htc-omfb-1",
+        "type": "revise",
+        "timestamp": "2026-11-18T06:24:38.651620+00:00",
+        "summary": "Implement immutable prepared-case validation, native headless workers, finite factorial/seed planning, complete-cohort collection and isolated local execution; verify conservation, failures and serial/concurrent behavior without changing accepted city scientific inputs.",
+        "used": [
+          "input:htc-setup-request",
+          "source:htc-omfb",
+          "artifact:omf-artifacts-implementation-architecture-md@0.1",
+          "artifact:omf-artifacts-implementation-module-mapping-md@0.1",
+          "artifact:initialization-plan-md@cleanup.1",
+          "artifact:initialization-verification-plan-md@0.2",
+          "software:src-autonomous_traffic-cli-py@cleanup.1",
+          "source:htc-ospool"
+        ],
+        "generated": [
+          "artifact:omf-artifacts-implementation-architecture-md@htc.1",
+          "artifact:omf-artifacts-implementation-module-mapping-md@htc.1",
+          "artifact:initialization-plan-md@htc.1",
+          "artifact:omf-artifacts-implementation-prepared-sumo-inputs-md@htc.1",
+          "artifact:initialization-verification-plan-md@htc.1",
+          "software:src-autonomous_traffic-cli-py@htc.1",
+          "software:src-autonomous_traffic-htc-__init__-py@htc.1",
+          "software:src-autonomous_traffic-htc-api-py@htc.1",
+          "software:src-autonomous_traffic-htc-collect-py@htc.1",
+          "software:src-autonomous_traffic-htc-demo-py@htc.1",
+          "software:src-autonomous_traffic-htc-inputs-py@htc.1",
+          "software:src-autonomous_traffic-htc-local-py@htc.1",
+          "software:src-autonomous_traffic-htc-plan-py@htc.1",
+          "software:src-autonomous_traffic-htc-worker-py@htc.1",
+          "software:tests-test_htc-py@htc.1",
+          "software:tests-test_htc_integration-py@htc.1"
+        ],
+        "associated_agents": [
+          {
+            "agent": "agent:codex",
+            "role": "executor"
+          },
+          {
+            "agent": "skill:htc-omfb",
+            "role": "contributor"
+          },
+          {
+            "agent": "agent:user",
+            "role": "authorizer"
+          },
+          {
+            "agent": "skill:htc-ospool",
+            "role": "contributor"
+          }
+        ],
+        "authorization": {
+          "contract_authority": "omfb",
+          "mode": "authority-action",
+          "scope": "User requested an OSG-style headless parameter exploration setup conditional on GIS and initial parameters; local engineering implementation/verification and persistence are authorized. No commit, external submission or publication performed."
+        },
+        "parameters": {
+          "purpose": "engineering_fixture_only",
+          "scientific_benchmark_changes": false,
+          "parameter_axes": {
+            "native_vehicle_max_speed_mps": [
+              8.0,
+              12.0
+            ],
+            "native_following_headway_s": [
+              1.0,
+              1.5
+            ]
+          },
+          "case_count": 4,
+          "replicates": 2,
+          "seed_scope": "sumo_engine_only",
+          "seeds": [
+            20261117,
+            20261118
+          ],
+          "native_executions": 16,
+          "offline_container_executions": 8,
+          "tests_passed": 22,
+          "metrics_equal": true,
+          "pool_submission": false
+        },
+        "environment": {
+          "python_native": "3.12.3",
+          "python_container": "3.12.16",
+          "sumo": "1.28.0",
+          "uv": "0.12.7",
+          "base_git_revision": "a59b4692072f3feca040daf8faafc15c1fa26732",
+          "worktree_state": "uncommitted HTC extension; code fingerprint identifies executed source",
+          "code_sha256": "8391b0e99f86c9fa8a830ae71c52b08e0742b0e63cbf32b645b99c32742858ee",
+          "condor_parser": "not_available",
+          "container_network": "none",
+          "local_image": "see omf-artifacts/implementation/htc-verification/container/image-identity.json"
+        },
+        "decisions": [
+          {
+            "summary": "Prepare independently transferable case-by-replicate native tasks and preserve all expected result statuses",
+            "rationale": "This establishes verifiable headless execution while leaving GIS compilation, physical initialization and future coordinator/fault adapters explicit upstream work.",
+            "evidence": [
+              "input:htc-setup-request"
+            ],
+            "status": "accepted"
+          }
+        ],
+        "user_authorized_exception": null
+      },
+      {
+        "id": "activity:htc-ospool-1",
+        "type": "execute",
+        "timestamp": "2026-11-18T06:24:38.651620+00:00",
+        "summary": "Design HTCondor transfer/container jobs and reproducible worker packaging; execute synthetic headless native and offline-container fixtures, preserve results and document missing pool/image/data readiness. No external submission or image publication.",
+        "used": [
+          "input:htc-setup-request",
+          "source:htc-ospool",
+          "software:src-autonomous_traffic-cli-py@htc.1",
+          "software:src-autonomous_traffic-htc-__init__-py@htc.1",
+          "software:src-autonomous_traffic-htc-api-py@htc.1",
+          "software:src-autonomous_traffic-htc-collect-py@htc.1",
+          "software:src-autonomous_traffic-htc-demo-py@htc.1",
+          "software:src-autonomous_traffic-htc-inputs-py@htc.1",
+          "software:src-autonomous_traffic-htc-local-py@htc.1",
+          "software:src-autonomous_traffic-htc-plan-py@htc.1",
+          "software:src-autonomous_traffic-htc-worker-py@htc.1"
+        ],
+        "generated": [
+          "software:deploy-htcondor-Dockerfile@htc.1",
+          "software:deploy-htcondor-requirements-lock@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-1a48bfbc7cd3338c128d282c-tar-gz@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-79f72b0e8f9cf798ffa507c5-tar-gz@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-8776159b99d4db14cfb491c7-tar-gz@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-a2e26c1731e9528a881c878d-tar-gz@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-aaa508e59ac04a90593b9548-tar-gz@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-b242fbbf06fe0d8b13a0271d-tar-gz@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-b80f293dfc6481e84137e8f6-tar-gz@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-d0c5b9f8db0ca5bc917ed1a0-tar-gz@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-container-collected-collection-json@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-container-collected-metrics-csv@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-container-doctor-json@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-container-execution-json@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-container-image-identity-json@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-container-verification-json@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-files-manifest-json@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-batch-bundles-speed-12-tau-1p0-tar-gz@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-batch-bundles-speed-12-tau-1p5-tar-gz@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-batch-bundles-speed-8-tau-1p0-tar-gz@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-batch-bundles-speed-8-tau-1p5-tar-gz@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-batch-jobs-tsv@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-batch-plan-json@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-1a48bfbc7cd3338c128d282c-tar-gz@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-79f72b0e8f9cf798ffa507c5-tar-gz@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-8776159b99d4db14cfb491c7-tar-gz@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-a2e26c1731e9528a881c878d-tar-gz@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-aaa508e59ac04a90593b9548-tar-gz@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-b242fbbf06fe0d8b13a0271d-tar-gz@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-b80f293dfc6481e84137e8f6-tar-gz@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-d0c5b9f8db0ca5bc917ed1a0-tar-gz@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-batch-sweep-submit-in@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-1a48bfbc7cd3338c128d282c-json@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-79f72b0e8f9cf798ffa507c5-json@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-8776159b99d4db14cfb491c7-json@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-a2e26c1731e9528a881c878d-json@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-aaa508e59ac04a90593b9548-json@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-b242fbbf06fe0d8b13a0271d-json@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-b80f293dfc6481e84137e8f6-json@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-d0c5b9f8db0ca5bc917ed1a0-json@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-batch-worker-sh@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-collection-collection-json@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-collection-metrics-csv@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-inputs-grid-net-xml@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p0-case-json@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p0-network-net-xml@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p0-requests-json@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p0-routes-xml@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p5-case-json@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p5-network-net-xml@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p5-requests-json@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p5-routes-xml@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p0-case-json@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p0-network-net-xml@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p0-requests-json@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p0-routes-xml@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p5-case-json@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p5-network-net-xml@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p5-requests-json@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p5-routes-xml@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-inputs-sweep-json@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-serial-metrics-csv@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-native-verification-json@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-summary-json@htc.1",
+          "dataset:omf-artifacts-implementation-htc-verification-tests-log@htc.1",
+          "artifact:omf-artifacts-implementation-htc-verification-report-md@htc.1",
+          "workflow:omf-artifacts-implementation-htc-workflow-md@htc.1"
+        ],
+        "associated_agents": [
+          {
+            "agent": "agent:codex",
+            "role": "executor"
+          },
+          {
+            "agent": "skill:htc-ospool",
+            "role": "contributor"
+          },
+          {
+            "agent": "agent:user",
+            "role": "authorizer"
+          }
+        ],
+        "authorization": {
+          "contract_authority": "ospool",
+          "mode": "authority-action",
+          "scope": "User requested an OSG-style headless parameter exploration setup conditional on GIS and initial parameters; local engineering implementation/verification and persistence are authorized. No commit, external submission or publication performed."
+        },
+        "parameters": {
+          "purpose": "engineering_fixture_only",
+          "scientific_benchmark_changes": false,
+          "parameter_axes": {
+            "native_vehicle_max_speed_mps": [
+              8.0,
+              12.0
+            ],
+            "native_following_headway_s": [
+              1.0,
+              1.5
+            ]
+          },
+          "case_count": 4,
+          "replicates": 2,
+          "seed_scope": "sumo_engine_only",
+          "seeds": [
+            20261117,
+            20261118
+          ],
+          "native_executions": 16,
+          "offline_container_executions": 8,
+          "tests_passed": 22,
+          "metrics_equal": true,
+          "pool_submission": false
+        },
+        "environment": {
+          "python_native": "3.12.3",
+          "python_container": "3.12.16",
+          "sumo": "1.28.0",
+          "uv": "0.12.7",
+          "base_git_revision": "a59b4692072f3feca040daf8faafc15c1fa26732",
+          "worktree_state": "uncommitted HTC extension; code fingerprint identifies executed source",
+          "code_sha256": "8391b0e99f86c9fa8a830ae71c52b08e0742b0e63cbf32b645b99c32742858ee",
+          "condor_parser": "not_available",
+          "container_network": "none",
+          "local_image": "see omf-artifacts/implementation/htc-verification/container/image-identity.json"
+        },
+        "decisions": [
+          {
+            "summary": "Prepare independently transferable case-by-replicate native tasks and preserve all expected result statuses",
+            "rationale": "This establishes verifiable headless execution while leaving GIS compilation, physical initialization and future coordinator/fault adapters explicit upstream work.",
+            "evidence": [
+              "input:htc-setup-request"
+            ],
+            "status": "accepted"
+          }
+        ],
+        "user_authorized_exception": null
+      },
+      {
+        "id": "activity:htc-fair-1",
+        "type": "revise",
+        "timestamp": "2026-11-18T06:24:38.651620+00:00",
+        "summary": "Extend packaging and environment metadata; establish the canonical cross-object stewardship inventory, provenance and preservation boundaries for prepared inputs, runtime, tasks and outputs.",
+        "used": [
+          "input:htc-setup-request",
+          "source:htc-fair",
+          "artifact:omf-artifacts-fair-python-environment-md@cleanup.1",
+          "artifact:pyproject-toml@cleanup.1",
+          "workflow:omf-artifacts-implementation-htc-workflow-md@htc.1",
+          "artifact:omf-artifacts-implementation-htc-verification-report-md@htc.1"
+        ],
+        "generated": [
+          "software:-dockerignore@htc.1",
+          "artifact:omf-artifacts-fair-fair-management-plan-md@htc.1",
+          "artifact:omf-artifacts-fair-python-environment-md@htc.1",
+          "artifact:pyproject-toml@htc.1"
+        ],
+        "associated_agents": [
+          {
+            "agent": "agent:codex",
+            "role": "executor"
+          },
+          {
+            "agent": "skill:htc-fair",
+            "role": "contributor"
+          },
+          {
+            "agent": "agent:user",
+            "role": "authorizer"
+          }
+        ],
+        "authorization": {
+          "contract_authority": "fair",
+          "mode": "authority-action",
+          "scope": "User requested an OSG-style headless parameter exploration setup conditional on GIS and initial parameters; local engineering implementation/verification and persistence are authorized. No commit, external submission or publication performed."
+        },
+        "parameters": {
+          "purpose": "engineering_fixture_only",
+          "scientific_benchmark_changes": false,
+          "parameter_axes": {
+            "native_vehicle_max_speed_mps": [
+              8.0,
+              12.0
+            ],
+            "native_following_headway_s": [
+              1.0,
+              1.5
+            ]
+          },
+          "case_count": 4,
+          "replicates": 2,
+          "seed_scope": "sumo_engine_only",
+          "seeds": [
+            20261117,
+            20261118
+          ],
+          "native_executions": 16,
+          "offline_container_executions": 8,
+          "tests_passed": 22,
+          "metrics_equal": true,
+          "pool_submission": false
+        },
+        "environment": {
+          "python_native": "3.12.3",
+          "python_container": "3.12.16",
+          "sumo": "1.28.0",
+          "uv": "0.12.7",
+          "base_git_revision": "a59b4692072f3feca040daf8faafc15c1fa26732",
+          "worktree_state": "uncommitted HTC extension; code fingerprint identifies executed source",
+          "code_sha256": "8391b0e99f86c9fa8a830ae71c52b08e0742b0e63cbf32b645b99c32742858ee",
+          "condor_parser": "not_available",
+          "container_network": "none",
+          "local_image": "see omf-artifacts/implementation/htc-verification/container/image-identity.json"
+        },
+        "decisions": [
+          {
+            "summary": "Prepare independently transferable case-by-replicate native tasks and preserve all expected result statuses",
+            "rationale": "This establishes verifiable headless execution while leaving GIS compilation, physical initialization and future coordinator/fault adapters explicit upstream work.",
+            "evidence": [
+              "input:htc-setup-request"
+            ],
+            "status": "accepted"
+          }
+        ],
+        "user_authorized_exception": null
+      },
+      {
+        "id": "activity:htc-document-1",
+        "type": "revise",
+        "timestamp": "2026-11-18T06:24:38.651620+00:00",
+        "summary": "Update human README and narrative source notes to describe the implemented HTC workflow and its limits, without attributing engineering fixtures to Phoenix or implying implemented scientific coordination.",
+        "used": [
+          "input:htc-setup-request",
+          "source:htc-document",
+          "artifact:root-readme@cleanup.1",
+          "artifact:readme-source-notes@cleanup.1",
+          "workflow:omf-artifacts-implementation-htc-workflow-md@htc.1",
+          "artifact:omf-artifacts-implementation-prepared-sumo-inputs-md@htc.1",
+          "artifact:omf-artifacts-implementation-htc-verification-report-md@htc.1"
+        ],
+        "generated": [
+          "artifact:root-readme@htc.1",
+          "artifact:readme-source-notes@htc.1"
+        ],
+        "associated_agents": [
+          {
+            "agent": "agent:codex",
+            "role": "executor"
+          },
+          {
+            "agent": "skill:htc-document",
+            "role": "contributor"
+          },
+          {
+            "agent": "agent:user",
+            "role": "authorizer"
+          }
+        ],
+        "authorization": {
+          "contract_authority": "document",
+          "mode": "authority-action",
+          "scope": "User requested an OSG-style headless parameter exploration setup conditional on GIS and initial parameters; local engineering implementation/verification and persistence are authorized. No commit, external submission or publication performed."
+        },
+        "parameters": {
+          "purpose": "engineering_fixture_only",
+          "scientific_benchmark_changes": false,
+          "parameter_axes": {
+            "native_vehicle_max_speed_mps": [
+              8.0,
+              12.0
+            ],
+            "native_following_headway_s": [
+              1.0,
+              1.5
+            ]
+          },
+          "case_count": 4,
+          "replicates": 2,
+          "seed_scope": "sumo_engine_only",
+          "seeds": [
+            20261117,
+            20261118
+          ],
+          "native_executions": 16,
+          "offline_container_executions": 8,
+          "tests_passed": 22,
+          "metrics_equal": true,
+          "pool_submission": false
+        },
+        "environment": {
+          "python_native": "3.12.3",
+          "python_container": "3.12.16",
+          "sumo": "1.28.0",
+          "uv": "0.12.7",
+          "base_git_revision": "a59b4692072f3feca040daf8faafc15c1fa26732",
+          "worktree_state": "uncommitted HTC extension; code fingerprint identifies executed source",
+          "code_sha256": "8391b0e99f86c9fa8a830ae71c52b08e0742b0e63cbf32b645b99c32742858ee",
+          "condor_parser": "not_available",
+          "container_network": "none",
+          "local_image": "see omf-artifacts/implementation/htc-verification/container/image-identity.json"
+        },
+        "decisions": [
+          {
+            "summary": "Prepare independently transferable case-by-replicate native tasks and preserve all expected result statuses",
+            "rationale": "This establishes verifiable headless execution while leaving GIS compilation, physical initialization and future coordinator/fault adapters explicit upstream work.",
+            "evidence": [
+              "input:htc-setup-request"
+            ],
+            "status": "accepted"
+          }
+        ],
+        "user_authorized_exception": null
+      },
+      {
+        "id": "activity:htc-precommit-cleanup-fair-1",
+        "type": "revise",
+        "timestamp": "2026-11-18T06:31:17.939853+00:00",
+        "summary": "Preserve raw CSV engineering evidence bytes with scoped Git attributes and recognize standard CRLF record endings during whitespace checks; perform precommit checks without changing package source, model parameters or recorded results.",
+        "used": [
+          "input:htc-cleanup-commit",
+          "source:htc-fair"
+        ],
+        "generated": [
+          "software:git-evidence-attributes@cleanup.1"
+        ],
+        "associated_agents": [
+          {
+            "agent": "agent:codex",
+            "role": "executor"
+          },
+          {
+            "agent": "skill:htc-fair",
+            "role": "contributor"
+          },
+          {
+            "agent": "agent:user",
+            "role": "authorizer"
+          }
+        ],
+        "authorization": {
+          "contract_authority": "fair",
+          "mode": "authority-action",
+          "scope": "User requested cleanup and commit; this metadata-only cleanup preserves scientific meaning and raw evidence. Specific feature-commit approval remains pending under the OSPool skill."
+        },
+        "parameters": {
+          "package_source_changed": false,
+          "accepted_benchmark_changed": false,
+          "raw_evidence_changed": false,
+          "tests_passed": 22,
+          "lint_format": "passed",
+          "wheel_sdist_build": "passed",
+          "provenance_evidence_validation": "passed"
+        },
+        "environment": {
+          "python": "3.12.3",
+          "base_git_revision": "a59b4692072f3feca040daf8faafc15c1fa26732",
+          "worktree_state": "staged HTC extension; commit pending"
+        },
+        "decisions": [],
+        "user_authorized_exception": null
       }
     ],
     "relations": [
@@ -6102,6 +7775,501 @@
         "subject": "software:src-autonomous_traffic-sumo-probe-py@cleanup.1",
         "predicate": "wasGeneratedBy",
         "object": "activity:precommit-cleanup-omfb-1"
+      },
+      {
+        "subject": "software:-dockerignore@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-fair-1"
+      },
+      {
+        "subject": "artifact:root-readme@htc.1",
+        "predicate": "wasRevisionOf",
+        "object": "artifact:root-readme@cleanup.1"
+      },
+      {
+        "subject": "artifact:root-readme@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-document-1"
+      },
+      {
+        "subject": "software:deploy-htcondor-Dockerfile@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "software:deploy-htcondor-requirements-lock@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "artifact:readme-source-notes@htc.1",
+        "predicate": "wasRevisionOf",
+        "object": "artifact:readme-source-notes@cleanup.1"
+      },
+      {
+        "subject": "artifact:readme-source-notes@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-document-1"
+      },
+      {
+        "subject": "artifact:omf-artifacts-fair-fair-management-plan-md@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-fair-1"
+      },
+      {
+        "subject": "artifact:omf-artifacts-fair-python-environment-md@htc.1",
+        "predicate": "wasRevisionOf",
+        "object": "artifact:omf-artifacts-fair-python-environment-md@cleanup.1"
+      },
+      {
+        "subject": "artifact:omf-artifacts-fair-python-environment-md@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-fair-1"
+      },
+      {
+        "subject": "artifact:omf-artifacts-implementation-architecture-md@htc.1",
+        "predicate": "wasRevisionOf",
+        "object": "artifact:omf-artifacts-implementation-architecture-md@0.1"
+      },
+      {
+        "subject": "artifact:omf-artifacts-implementation-architecture-md@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-omfb-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-1a48bfbc7cd3338c128d282c-tar-gz@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-79f72b0e8f9cf798ffa507c5-tar-gz@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-8776159b99d4db14cfb491c7-tar-gz@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-a2e26c1731e9528a881c878d-tar-gz@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-aaa508e59ac04a90593b9548-tar-gz@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-b242fbbf06fe0d8b13a0271d-tar-gz@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-b80f293dfc6481e84137e8f6-tar-gz@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-d0c5b9f8db0ca5bc917ed1a0-tar-gz@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-container-collected-collection-json@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-container-collected-metrics-csv@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-container-doctor-json@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-container-execution-json@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-container-image-identity-json@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-container-verification-json@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-files-manifest-json@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-batch-bundles-speed-12-tau-1p0-tar-gz@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-batch-bundles-speed-12-tau-1p5-tar-gz@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-batch-bundles-speed-8-tau-1p0-tar-gz@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-batch-bundles-speed-8-tau-1p5-tar-gz@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-batch-jobs-tsv@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-batch-plan-json@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-1a48bfbc7cd3338c128d282c-tar-gz@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-79f72b0e8f9cf798ffa507c5-tar-gz@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-8776159b99d4db14cfb491c7-tar-gz@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-a2e26c1731e9528a881c878d-tar-gz@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-aaa508e59ac04a90593b9548-tar-gz@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-b242fbbf06fe0d8b13a0271d-tar-gz@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-b80f293dfc6481e84137e8f6-tar-gz@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-d0c5b9f8db0ca5bc917ed1a0-tar-gz@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-batch-sweep-submit-in@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-1a48bfbc7cd3338c128d282c-json@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-79f72b0e8f9cf798ffa507c5-json@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-8776159b99d4db14cfb491c7-json@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-a2e26c1731e9528a881c878d-json@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-aaa508e59ac04a90593b9548-json@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-b242fbbf06fe0d8b13a0271d-json@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-b80f293dfc6481e84137e8f6-json@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-d0c5b9f8db0ca5bc917ed1a0-json@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-batch-worker-sh@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-collection-collection-json@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-collection-metrics-csv@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-grid-net-xml@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p0-case-json@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p0-network-net-xml@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p0-requests-json@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p0-routes-xml@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p5-case-json@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p5-network-net-xml@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p5-requests-json@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p5-routes-xml@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p0-case-json@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p0-network-net-xml@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p0-requests-json@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p0-routes-xml@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p5-case-json@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p5-network-net-xml@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p5-requests-json@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p5-routes-xml@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-sweep-json@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-serial-metrics-csv@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-native-verification-json@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-summary-json@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "dataset:omf-artifacts-implementation-htc-verification-tests-log@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "artifact:omf-artifacts-implementation-htc-verification-report-md@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "workflow:omf-artifacts-implementation-htc-workflow-md@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-ospool-1"
+      },
+      {
+        "subject": "artifact:omf-artifacts-implementation-module-mapping-md@htc.1",
+        "predicate": "wasRevisionOf",
+        "object": "artifact:omf-artifacts-implementation-module-mapping-md@0.1"
+      },
+      {
+        "subject": "artifact:omf-artifacts-implementation-module-mapping-md@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-omfb-1"
+      },
+      {
+        "subject": "artifact:initialization-plan-md@htc.1",
+        "predicate": "wasRevisionOf",
+        "object": "artifact:initialization-plan-md@cleanup.1"
+      },
+      {
+        "subject": "artifact:initialization-plan-md@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-omfb-1"
+      },
+      {
+        "subject": "artifact:omf-artifacts-implementation-prepared-sumo-inputs-md@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-omfb-1"
+      },
+      {
+        "subject": "artifact:initialization-verification-plan-md@htc.1",
+        "predicate": "wasRevisionOf",
+        "object": "artifact:initialization-verification-plan-md@0.2"
+      },
+      {
+        "subject": "artifact:initialization-verification-plan-md@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-omfb-1"
+      },
+      {
+        "subject": "artifact:pyproject-toml@htc.1",
+        "predicate": "wasRevisionOf",
+        "object": "artifact:pyproject-toml@cleanup.1"
+      },
+      {
+        "subject": "artifact:pyproject-toml@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-fair-1"
+      },
+      {
+        "subject": "software:src-autonomous_traffic-cli-py@htc.1",
+        "predicate": "wasRevisionOf",
+        "object": "software:src-autonomous_traffic-cli-py@cleanup.1"
+      },
+      {
+        "subject": "software:src-autonomous_traffic-cli-py@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-omfb-1"
+      },
+      {
+        "subject": "software:src-autonomous_traffic-htc-__init__-py@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-omfb-1"
+      },
+      {
+        "subject": "software:src-autonomous_traffic-htc-api-py@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-omfb-1"
+      },
+      {
+        "subject": "software:src-autonomous_traffic-htc-collect-py@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-omfb-1"
+      },
+      {
+        "subject": "software:src-autonomous_traffic-htc-demo-py@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-omfb-1"
+      },
+      {
+        "subject": "software:src-autonomous_traffic-htc-inputs-py@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-omfb-1"
+      },
+      {
+        "subject": "software:src-autonomous_traffic-htc-local-py@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-omfb-1"
+      },
+      {
+        "subject": "software:src-autonomous_traffic-htc-plan-py@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-omfb-1"
+      },
+      {
+        "subject": "software:src-autonomous_traffic-htc-worker-py@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-omfb-1"
+      },
+      {
+        "subject": "software:tests-test_htc-py@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-omfb-1"
+      },
+      {
+        "subject": "software:tests-test_htc_integration-py@htc.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-omfb-1"
+      },
+      {
+        "subject": "software:git-evidence-attributes@cleanup.1",
+        "predicate": "wasGeneratedBy",
+        "object": "activity:htc-precommit-cleanup-fair-1"
       }
     ],
     "dependency_assertions": [
@@ -6664,6 +8832,26 @@
         "asserted_at": "2026-11-18T04:42:29.618358+00:00",
         "reason": "Package/stack selection changes execution paths and environment documentation. Updated commands/status in the new revision.",
         "resolved_by_activity": "activity:python-sumo-package-document-0.1"
+      },
+      {
+        "id": "dep:htc-fair-resolved",
+        "upstream_entity": "workflow:omf-artifacts-implementation-htc-workflow-md@htc.1",
+        "downstream_entity": "artifact:omf-artifacts-fair-fair-management-plan-md@htc.1",
+        "status": "resolved",
+        "caused_by_activity": "activity:htc-ospool-1",
+        "asserted_at": "2026-11-18T06:24:38.651620+00:00",
+        "reason": "Reconciled execution status, lineage and limitations against the implemented and tested workflow.",
+        "resolved_by_activity": "activity:htc-fair-1"
+      },
+      {
+        "id": "dep:htc-document-resolved",
+        "upstream_entity": "workflow:omf-artifacts-implementation-htc-workflow-md@htc.1",
+        "downstream_entity": "artifact:root-readme@htc.1",
+        "status": "resolved",
+        "caused_by_activity": "activity:htc-ospool-1",
+        "asserted_at": "2026-11-18T06:24:38.651620+00:00",
+        "reason": "Reconciled execution status, lineage and limitations against the implemented and tested workflow.",
+        "resolved_by_activity": "activity:htc-document-1"
       }
     ],
     "reviews": [
@@ -9025,6 +11213,1355 @@
         "evidence": [],
         "activity": null,
         "notes": "Author cleanup checks complete; independent scientific review is not implied."
+      },
+      {
+        "id": "review:software:-dockerignore@htc.1",
+        "entity": "software:-dockerignore@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:artifact:root-readme@htc.1",
+        "entity": "artifact:root-readme@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:software:deploy-htcondor-Dockerfile@htc.1",
+        "entity": "software:deploy-htcondor-Dockerfile@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:software:deploy-htcondor-requirements-lock@htc.1",
+        "entity": "software:deploy-htcondor-requirements-lock@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:artifact:readme-source-notes@htc.1",
+        "entity": "artifact:readme-source-notes@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:artifact:omf-artifacts-fair-fair-management-plan-md@htc.1",
+        "entity": "artifact:omf-artifacts-fair-fair-management-plan-md@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:artifact:omf-artifacts-fair-python-environment-md@htc.1",
+        "entity": "artifact:omf-artifacts-fair-python-environment-md@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:artifact:omf-artifacts-implementation-architecture-md@htc.1",
+        "entity": "artifact:omf-artifacts-implementation-architecture-md@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-1a48bfbc7cd3338c128d282c-tar-gz@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-1a48bfbc7cd3338c128d282c-tar-gz@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-79f72b0e8f9cf798ffa507c5-tar-gz@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-79f72b0e8f9cf798ffa507c5-tar-gz@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-8776159b99d4db14cfb491c7-tar-gz@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-8776159b99d4db14cfb491c7-tar-gz@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-a2e26c1731e9528a881c878d-tar-gz@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-a2e26c1731e9528a881c878d-tar-gz@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-aaa508e59ac04a90593b9548-tar-gz@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-aaa508e59ac04a90593b9548-tar-gz@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-b242fbbf06fe0d8b13a0271d-tar-gz@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-b242fbbf06fe0d8b13a0271d-tar-gz@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-b80f293dfc6481e84137e8f6-tar-gz@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-b80f293dfc6481e84137e8f6-tar-gz@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-d0c5b9f8db0ca5bc917ed1a0-tar-gz@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-container-batch-results-task-d0c5b9f8db0ca5bc917ed1a0-tar-gz@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-container-collected-collection-json@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-container-collected-collection-json@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-container-collected-metrics-csv@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-container-collected-metrics-csv@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-container-doctor-json@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-container-doctor-json@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-container-execution-json@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-container-execution-json@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-container-image-identity-json@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-container-image-identity-json@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-container-verification-json@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-container-verification-json@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-files-manifest-json@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-files-manifest-json@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-batch-bundles-speed-12-tau-1p0-tar-gz@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-batch-bundles-speed-12-tau-1p0-tar-gz@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-batch-bundles-speed-12-tau-1p5-tar-gz@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-batch-bundles-speed-12-tau-1p5-tar-gz@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-batch-bundles-speed-8-tau-1p0-tar-gz@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-batch-bundles-speed-8-tau-1p0-tar-gz@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-batch-bundles-speed-8-tau-1p5-tar-gz@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-batch-bundles-speed-8-tau-1p5-tar-gz@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-batch-jobs-tsv@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-batch-jobs-tsv@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-batch-plan-json@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-batch-plan-json@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-1a48bfbc7cd3338c128d282c-tar-gz@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-1a48bfbc7cd3338c128d282c-tar-gz@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-79f72b0e8f9cf798ffa507c5-tar-gz@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-79f72b0e8f9cf798ffa507c5-tar-gz@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-8776159b99d4db14cfb491c7-tar-gz@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-8776159b99d4db14cfb491c7-tar-gz@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-a2e26c1731e9528a881c878d-tar-gz@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-a2e26c1731e9528a881c878d-tar-gz@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-aaa508e59ac04a90593b9548-tar-gz@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-aaa508e59ac04a90593b9548-tar-gz@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-b242fbbf06fe0d8b13a0271d-tar-gz@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-b242fbbf06fe0d8b13a0271d-tar-gz@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-b80f293dfc6481e84137e8f6-tar-gz@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-b80f293dfc6481e84137e8f6-tar-gz@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-d0c5b9f8db0ca5bc917ed1a0-tar-gz@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-batch-results-task-d0c5b9f8db0ca5bc917ed1a0-tar-gz@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-batch-sweep-submit-in@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-batch-sweep-submit-in@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-1a48bfbc7cd3338c128d282c-json@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-1a48bfbc7cd3338c128d282c-json@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-79f72b0e8f9cf798ffa507c5-json@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-79f72b0e8f9cf798ffa507c5-json@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-8776159b99d4db14cfb491c7-json@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-8776159b99d4db14cfb491c7-json@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-a2e26c1731e9528a881c878d-json@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-a2e26c1731e9528a881c878d-json@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-aaa508e59ac04a90593b9548-json@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-aaa508e59ac04a90593b9548-json@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-b242fbbf06fe0d8b13a0271d-json@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-b242fbbf06fe0d8b13a0271d-json@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-b80f293dfc6481e84137e8f6-json@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-b80f293dfc6481e84137e8f6-json@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-d0c5b9f8db0ca5bc917ed1a0-json@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-batch-tasks-task-d0c5b9f8db0ca5bc917ed1a0-json@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-batch-worker-sh@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-batch-worker-sh@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-collection-collection-json@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-collection-collection-json@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-collection-metrics-csv@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-collection-metrics-csv@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-inputs-grid-net-xml@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-grid-net-xml@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p0-case-json@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p0-case-json@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p0-network-net-xml@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p0-network-net-xml@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p0-requests-json@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p0-requests-json@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p0-routes-xml@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p0-routes-xml@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p5-case-json@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p5-case-json@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p5-network-net-xml@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p5-network-net-xml@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p5-requests-json@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p5-requests-json@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p5-routes-xml@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-12-tau-1p5-routes-xml@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p0-case-json@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p0-case-json@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p0-network-net-xml@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p0-network-net-xml@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p0-requests-json@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p0-requests-json@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p0-routes-xml@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p0-routes-xml@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p5-case-json@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p5-case-json@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p5-network-net-xml@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p5-network-net-xml@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p5-requests-json@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p5-requests-json@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p5-routes-xml@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-speed-8-tau-1p5-routes-xml@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-inputs-sweep-json@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-inputs-sweep-json@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-serial-metrics-csv@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-serial-metrics-csv@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-native-verification-json@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-native-verification-json@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-summary-json@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-summary-json@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:dataset:omf-artifacts-implementation-htc-verification-tests-log@htc.1",
+        "entity": "dataset:omf-artifacts-implementation-htc-verification-tests-log@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:artifact:omf-artifacts-implementation-htc-verification-report-md@htc.1",
+        "entity": "artifact:omf-artifacts-implementation-htc-verification-report-md@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:workflow:omf-artifacts-implementation-htc-workflow-md@htc.1",
+        "entity": "workflow:omf-artifacts-implementation-htc-workflow-md@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:artifact:omf-artifacts-implementation-module-mapping-md@htc.1",
+        "entity": "artifact:omf-artifacts-implementation-module-mapping-md@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:artifact:initialization-plan-md@htc.1",
+        "entity": "artifact:initialization-plan-md@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:artifact:omf-artifacts-implementation-prepared-sumo-inputs-md@htc.1",
+        "entity": "artifact:omf-artifacts-implementation-prepared-sumo-inputs-md@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:artifact:initialization-verification-plan-md@htc.1",
+        "entity": "artifact:initialization-verification-plan-md@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:artifact:pyproject-toml@htc.1",
+        "entity": "artifact:pyproject-toml@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:software:src-autonomous_traffic-cli-py@htc.1",
+        "entity": "software:src-autonomous_traffic-cli-py@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:software:src-autonomous_traffic-htc-__init__-py@htc.1",
+        "entity": "software:src-autonomous_traffic-htc-__init__-py@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:software:src-autonomous_traffic-htc-api-py@htc.1",
+        "entity": "software:src-autonomous_traffic-htc-api-py@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:software:src-autonomous_traffic-htc-collect-py@htc.1",
+        "entity": "software:src-autonomous_traffic-htc-collect-py@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:software:src-autonomous_traffic-htc-demo-py@htc.1",
+        "entity": "software:src-autonomous_traffic-htc-demo-py@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:software:src-autonomous_traffic-htc-inputs-py@htc.1",
+        "entity": "software:src-autonomous_traffic-htc-inputs-py@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:software:src-autonomous_traffic-htc-local-py@htc.1",
+        "entity": "software:src-autonomous_traffic-htc-local-py@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:software:src-autonomous_traffic-htc-plan-py@htc.1",
+        "entity": "software:src-autonomous_traffic-htc-plan-py@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:software:src-autonomous_traffic-htc-worker-py@htc.1",
+        "entity": "software:src-autonomous_traffic-htc-worker-py@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:software:tests-test_htc-py@htc.1",
+        "entity": "software:tests-test_htc-py@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:software:tests-test_htc_integration-py@htc.1",
+        "entity": "software:tests-test_htc_integration-py@htc.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Prepared-input/task identity",
+          "Verified scope and completeness",
+          "Scientific fixtures distinguished from city evidence"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author verification recorded; independent review and actual pool pilot remain outstanding."
+      },
+      {
+        "id": "review:software:git-evidence-attributes@cleanup.1",
+        "entity": "software:git-evidence-attributes@cleanup.1",
+        "status": "unreviewed",
+        "reviewer": "unknown",
+        "reviewed_at": null,
+        "criteria": [
+          "Recorded CSV bytes preserved",
+          "Scoped Git whitespace validation passes"
+        ],
+        "evidence": [],
+        "activity": null,
+        "notes": "Author cleanup checks; independent review not implied."
       }
     ],
     "privacy": {

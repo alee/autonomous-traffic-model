@@ -1,0 +1,9 @@
+{
+  "Id": "sha256:c18e92d19b64d36415a5fde7af1935691a460e80cf64b3dc24565d4e89054d0d",
+  "RepoDigests": [
+    "autonomous-traffic-worker@sha256:c18e92d19b64d36415a5fde7af1935691a460e80cf64b3dc24565d4e89054d0d"
+  ],
+  "Created": "2026-11-18T06:19:18.637704162Z",
+  "Architecture": "amd64",
+  "Os": "linux"
+}

@@ -1,0 +1,10 @@
+.git
+.venv
+**/__pycache__
+.ruff_cache
+runs
+omf-artifacts
+src
+scripts
+tests
+# The image consumes the built wheel and exported lock, not checkout files.

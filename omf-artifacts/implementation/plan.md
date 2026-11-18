@@ -18,3 +18,7 @@ src/autonomous_traffic/demand.py generates stable synthetic households, resident
 
 ## Python/SUMO stack implementation
 The project now has a src-layout package, autonomous-traffic CLI, optional pinned sumo extra, Python 3.12 selector, uv lockfile, and compatibility scripts. architecture.md and module-mapping.md record the boundaries. The demand algorithms and accepted input bytes are preserved. python-stack-verification.md reports packaging, core-only, output-equivalence, and packaged checkpoint checks. ../fair/python-environment.md owns environment/packaging details. The engine remains subject to model-specific physical and checkpoint evaluation; selecting the stack does not validate the unfinished Phoenix model.
+
+## Headless HTC preparation
+
+A generic native-SUMO prepared-case runner now supports finite factorial cases × engine-seed replicates, isolated local validation, container execution and non-submitting HTCondor batch preparation. See htc-workflow.md, prepared-sumo-inputs.md and htc-verification-report.md. This is the execution layer for future city experiments, not implementation of their scientific mechanisms. Next, produce and audit the GIS-derived network and occupancy-conditioned initial state, compile demand to explicit routes/ledger, and add tested policy/operator/fault adapters before interpreting an ensemble scientifically. Start with a small AOI and representative pilot; measure runtime, memory, disk and outputs before scaling. Scientific design/ranges stay under OMFA authority.

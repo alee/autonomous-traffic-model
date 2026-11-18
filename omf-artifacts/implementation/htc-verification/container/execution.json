@@ -1,0 +1,49 @@
+{
+  "execution": "local_native_not_container_or_pool",
+  "jobs": 2,
+  "task_count": 8,
+  "succeeded": 8,
+  "failed": 0,
+  "runs": [
+    {
+      "task_id": "task-8776159b99d4db14cfb491c7",
+      "status": "succeeded",
+      "exit_code": 0
+    },
+    {
+      "task_id": "task-b242fbbf06fe0d8b13a0271d",
+      "status": "succeeded",
+      "exit_code": 0
+    },
+    {
+      "task_id": "task-a2e26c1731e9528a881c878d",
+      "status": "succeeded",
+      "exit_code": 0
+    },
+    {
+      "task_id": "task-79f72b0e8f9cf798ffa507c5",
+      "status": "succeeded",
+      "exit_code": 0
+    },
+    {
+      "task_id": "task-b80f293dfc6481e84137e8f6",
+      "status": "succeeded",
+      "exit_code": 0
+    },
+    {
+      "task_id": "task-d0c5b9f8db0ca5bc917ed1a0",
+      "status": "succeeded",
+      "exit_code": 0
+    },
+    {
+      "task_id": "task-1a48bfbc7cd3338c128d282c",
+      "status": "succeeded",
+      "exit_code": 0
+    },
+    {
+      "task_id": "task-aaa508e59ac04a90593b9548",
+      "status": "succeeded",
+      "exit_code": 0
+    }
+  ]
+}

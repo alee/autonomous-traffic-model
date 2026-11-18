@@ -22,3 +22,7 @@ The local project is initialized with Git on main for its first source snapshot.
 
 ## Cleanup checks
 Ruff formatting/import cleanup preserves the source function ASTs and the accepted configuration/generated data bytes. Ten tests, lint and formatter checks are required before the initial commit. The local .venv, caches, build products and new runs remain ignored; reviewed generated inputs and raw engineering evidence are retained.
+
+## HTC environment extension
+
+The canonical stewardship scope now includes cross-object execution lineage; see fair-management-plan.md. `deploy/htcondor/requirements.lock` is a hash-pinned runtime-only export of uv.lock, not an independent dependency authority. The Dockerfile consumes a built project wheel and a digest-pinned Python base, with explicit SUMO native libraries. Apt package resolution is not fully archived, so rebuilding the recipe alone does not guarantee identical image bytes. Preserve and use an immutable published image digest for remote runs. A local image was exercised without networking; details and observed environment are in ../implementation/htc-verification-report.md. No image was published, and OSPool execution remains untested. Base Git revision and actual worktree code fingerprint are recorded separately; the new HTC code has not yet been committed.

@@ -1,0 +1,18 @@
+{
+  "bundle_name": "speed-8-tau-1p5.tar.gz",
+  "bundle_sha256": "25d0a108036924ad137103bbf1c56a06b7b7f698793b952f92962b44f2123345",
+  "case_id": "speed-8-tau-1p5",
+  "case_sha256": "1e0fd0b46c2e31f12cccbdc4c67b351ad015311c6f0fd615f61428097fddc7b8",
+  "code_sha256": "8391b0e99f86c9fa8a830ae71c52b08e0742b0e63cbf32b645b99c32742858ee",
+  "parameters": {
+    "following_headway_s": 1.5,
+    "vehicle_max_speed_mps": 8.0
+  },
+  "purpose": "engineering_fixture",
+  "replicate": 0,
+  "schema_version": "1",
+  "seed": 20261117,
+  "seed_scope": "sumo_engine_only",
+  "task_id": "task-1a48bfbc7cd3338c128d282c",
+  "wall_time_s": 3600
+}
