@@ -1,0 +1,12 @@
+{
+  "files": {
+    "external_people.jsonl": "e461b98683816256be0274be188dba4d38ae02edf7faaac7fb5631340b8a2c2e",
+    "external_trips.jsonl": "02169490611c49041381ffc9a91ae045cba2c03641da6c598ade3381ac4c67e4",
+    "households.jsonl": "f9a7491463af8d9ae423df4a091e78bac673646982fa0b9a202edc4772d82526",
+    "resident_service_vehicles.jsonl": "05089c8fb0382b562004dd7f62203ed923ecdf4b79bc887a1342081bb4fe15c2",
+    "resident_trips.jsonl": "38e9b7e363c3784541b932a618a5ce4f23257e860b7acf76d1188271a4cfc4f3",
+    "residents.jsonl": "910de73565c6352638fbe2c0eae0ee0500ab2653112a3cc854d6d3dccef717c3",
+    "summary.json": "8cd5dd23933413cf7a689b5efb4aed0f364e73a9aa51e9580f709cd5b0d60e1b"
+  },
+  "input_sha256": "4d41dfd4ef6a64a3cabcc8c8d35e6bbfbc2315cf330bcf96097f9373573ab854"
+}

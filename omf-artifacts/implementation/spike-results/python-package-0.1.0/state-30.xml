@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-11-17T21:37:51.297148-07:00 by Eclipse SUMO sumo 1.28.0
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="/tmp/traffic-python-stack/checkpoint-run/fixture.net.xml"/>
+        <route-files value="/tmp/traffic-python-stack/checkpoint-run/fixture.rou.xml"/>
+    </input>
+
+    <output>
+        <save-state.rng value="true"/>
+        <save-state.transportables value="true"/>
+        <save-state.precision value="17"/>
+    </output>
+
+    <time>
+        <step-length value="0.5"/>
+    </time>
+
+    <processing>
+        <collision.action value="warn"/>
+        <collision.check-junctions value="true"/>
+        <time-to-teleport value="-1"/>
+    </processing>
+
+    <report>
+        <duration-log.disable value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+    <traci_server>
+        <remote-port value="59609"/>
+    </traci_server>
+
+    <random_number>
+        <seed value="42"/>
+    </random_number>
+
+</sumoConfiguration>
+-->
+
+<snapshot type="micro" version="1.28.0" time="30.000" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/state_file.xsd">
+    <rngState default="0" routeHandler="14" insertionControl="0" device="0" device.btreceiver="0" driverState="0" device.toc="0">
+        <rngLane index="0" state="0"/>
+        <rngLane index="1" state="0"/>
+        <rngLane index="2" state="0"/>
+        <rngLane index="3" state="0"/>
+        <rngLane index="4" state="0"/>
+        <rngLane index="5" state="0"/>
+        <rngLane index="6" state="0"/>
+        <rngLane index="7" state="0"/>
+        <rngLane index="8" state="0"/>
+        <rngLane index="9" state="62"/>
+        <rngLane index="10" state="51"/>
+        <rngLane index="11" state="0"/>
+        <rngLane index="12" state="0"/>
+        <rngLane index="13" state="0"/>
+        <rngLane index="14" state="0"/>
+        <rngLane index="15" state="0"/>
+        <rngLane index="16" state="0"/>
+        <rngLane index="17" state="0"/>
+        <rngLane index="18" state="0"/>
+        <rngLane index="19" state="0"/>
+        <rngLane index="20" state="0"/>
+        <rngLane index="21" state="0"/>
+        <rngLane index="22" state="0"/>
+        <rngLane index="23" state="0"/>
+        <rngLane index="24" state="0"/>
+        <rngLane index="25" state="0"/>
+        <rngLane index="26" state="0"/>
+        <rngLane index="27" state="0"/>
+        <rngLane index="28" state="0"/>
+        <rngLane index="29" state="0"/>
+        <rngLane index="30" state="0"/>
+        <rngLane index="31" state="0"/>
+        <rngLane index="32" state="0"/>
+        <rngLane index="33" state="0"/>
+        <rngLane index="34" state="0"/>
+        <rngLane index="35" state="0"/>
+        <rngLane index="36" state="0"/>
+        <rngLane index="37" state="0"/>
+        <rngLane index="38" state="0"/>
+        <rngLane index="39" state="0"/>
+        <rngLane index="40" state="0"/>
+        <rngLane index="41" state="0"/>
+        <rngLane index="42" state="0"/>
+        <rngLane index="43" state="0"/>
+        <rngLane index="44" state="0"/>
+        <rngLane index="45" state="0"/>
+        <rngLane index="46" state="0"/>
+        <rngLane index="47" state="0"/>
+        <rngLane index="48" state="0"/>
+        <rngLane index="49" state="0"/>
+        <rngLane index="50" state="4"/>
+        <rngLane index="51" state="0"/>
+        <rngLane index="52" state="0"/>
+        <rngLane index="53" state="0"/>
+        <rngLane index="54" state="0"/>
+        <rngLane index="55" state="0"/>
+        <rngLane index="56" state="0"/>
+        <rngLane index="57" state="0"/>
+        <rngLane index="58" state="0"/>
+        <rngLane index="59" state="0"/>
+        <rngLane index="60" state="0"/>
+        <rngLane index="61" state="0"/>
+        <rngLane index="62" state="0"/>
+        <rngLane index="63" state="0"/>
+    </rngState>
+    <edgeControl lanes="C2B2_0"/>
+    <route id="route" state="1" edges="C1C2 C2B2 B2B1 B1A1 A1A2 A2B2 B2C2 C2C1"/>
+    <delay number="3" begin="4" end="0" depart="2.00000000000000000" time="0.00000000000000000" speedFactor="1.16179999999999994" decel="4.50000000000000000"/>
+    <vType id="DEFAULT_PEDTYPE" vClass="pedestrian"/>
+    <vType id="fixtureCar" length="5.00000000000000000" minGap="2.50000000000000000" maxSpeed="10.00000000000000000" personCapacity="4" carFollowModel="Krauss" accel="2" decel="4.5" emergencyDecel="9" sigma="0" tau="1"/>
+    <vehicle id="car0" type="fixtureCar" depart="0.000" route="route" distance="117.34 0" speedFactor="0.94830000000000003" state="2050 0 1 5.09999999999999964 0 4.75824092764965378 29500 0 0 1 9223372036854774807 9223372036854774807 9223372036854774807" pos="70.58492139017013756 65.58492139017013756 4.92624932196596976" speed="9.85249864393193953 9.82299837271832743" angle="270.00000000000000000" posLat="0.00000000000000000" waitingTime="100000 1 25000 26000" lcStateBase="0.00000000000000000" lcState2="0 0 0 0 0">
+        <stop lane="C1C2_0" endPos="10.00000000000000000" duration="2.000" triggered="person" expected="rider0" started="2.000" ended="5.000"/>
+        <device id="person_car0" state="0 0 0"/>
+    </vehicle>
+    <vehicle id="car1" type="fixtureCar" depart="3.000" route="route" distance="117.34 0" speedFactor="1.16179999999999994" state="2050 3000 1 5.09999999999999964 0 6.21065760000000022 29500 0 0 0 9223372036854774807 9223372036854774807 9223372036854774807" pos="87.71716799999998671 82.71716799999998671 5.00000000000000000" speed="10.00000000000000000 10.00000000000000000" angle="270.00000000000000000" posLat="0.00000000000000000" waitingTime="100000 1 9500 10500" lcStateBase="0.00000000000000000" lcState2="0 0 0 0 0"/>
+    <vehicle id="parked" type="fixtureCar" depart="6.000" route="route" distance="0 0" speedFactor="0.88119999999999998" state="2050 8000 0 5.09999999999999964 0 0.12115555555555524 13000 1 63500 0 9223372036854774807 9223372036854774807 9223372036854774807" pos="40.00000000000000711 35.00000000000000711 0.00000000000000000" speed="0.00000000000000000 0.00000000000000000" angle="0.00000000000000000" posLat="0.00000000000000000" waitingTime="100000 0" lcStateBase="0.00000000000000000" lcState2="0 0 0 0 0">
+        <stop lane="C1C2_0" endPos="40.00000000000000000" duration="63.500" parking="1" started="13.000"/>
+    </vehicle>
+    <vehicle id="future" type="fixtureCar" depart="90.000" route="route" distance="0 0" speedFactor="0.93120000000000003" state="2050 9223372036854774807 0 -1.00000000000000000 0 0.00000000000000000 0 0 0 0 9223372036854774807 9223372036854774807 9223372036854774807" pos="0.00000000000000000 0.00000000000000000 0.00000000000000000" speed="0.00000000000000000 0.00000000000000000" angle="90.00000000000000000" posLat="0.00000000000000000" waitingTime="100000 0" lcStateBase="0.00000000000000000" lcState2="0 0 0 0 0"/>
+    <transportables type="person" state="1 1 0 0 0 0 0 0 0">
+        <person id="rider0" type="DEFAULT_PEDTYPE" depart="0.000" departPos="10.00000000000000000" speedFactor="1.07210000000000005" state="8 1 0 224 -1 1 5000 car0 4.9">
+            <ride from="C1C2" to="C2C1" lines="car0" routeLength="4.90000000000000924" vehicle="car0" started="5.000" ended="-1"/>
+        </person>
+    </transportables>
+    <vehicleTransfer id="parked" depart="-1" parking="C1C2_0"/>
+    <lane id="C2B2_0">
+        <vehicles value="car0 car1"/>
+    </lane>
+    <tlLogic id="B1" programID="0" phase="0" duration="30000" until="42000" cycleTime="30000" active="1"/>
+</snapshot>

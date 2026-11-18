@@ -1,0 +1,286 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Draft traffic run request v0.1",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "minLength": 1
+    },
+    "schema_version": {
+      "const": "0.1"
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "readiness": {
+      "const": "draft"
+    },
+    "scenario": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "sha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "additionalProperties": false
+    },
+    "policy": {
+      "type": "object",
+      "properties": {
+        "family": {
+          "enum": [
+            "C0",
+            "C1",
+            "C2",
+            "C3",
+            "C4",
+            "O"
+          ]
+        },
+        "definition": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "sha256": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          },
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "initialization_profile": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "sha256": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          },
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "family",
+        "definition",
+        "initialization_profile"
+      ],
+      "additionalProperties": false
+    },
+    "start": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "mode": {
+              "const": "fresh"
+            }
+          },
+          "required": [
+            "mode"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "mode": {
+              "const": "exact_continuation"
+            },
+            "checkpoint": {
+              "type": "object",
+              "properties": {
+                "path": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "minLength": 1
+                },
+                "sha256": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "pattern": "^[a-f0-9]{64}$"
+                }
+              },
+              "required": [
+                "path",
+                "sha256"
+              ],
+              "additionalProperties": false
+            },
+            "expected_elapsed_s": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "mode",
+            "checkpoint",
+            "expected_elapsed_s"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "randomness": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "$schema",
+    "schema_version",
+    "run_id",
+    "readiness",
+    "scenario",
+    "policy",
+    "start",
+    "randomness"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "start": {
+            "properties": {
+              "mode": {
+                "const": "fresh"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "randomness": {
+            "type": "object",
+            "properties": {
+              "algorithm": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              },
+              "algorithm_version": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              },
+              "seed_derivation": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              },
+              "root_seed": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "replicate_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "stream_names": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              }
+            },
+            "required": [
+              "algorithm",
+              "algorithm_version",
+              "seed_derivation",
+              "root_seed",
+              "replicate_id",
+              "stream_names"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "start": {
+            "properties": {
+              "mode": {
+                "const": "exact_continuation"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "randomness": {
+            "type": "object",
+            "properties": {
+              "restore": {
+                "const": "checkpoint_stream_states"
+              }
+            },
+            "required": [
+              "restore"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "benchmark_id": "coronado-hypothetical-v1",
+  "execution_ready": false,
+  "external_future_persons": 560,
+  "external_future_requests": 510,
+  "external_occupancy_counts": {
+    "0": 26,
+    "1": 408,
+    "2": 76
+  },
+  "households": 1000,
+  "initial_on_road_vehicle_count": null,
+  "prepositioned_resident_vehicles": 380,
+  "randomness": {
+    "generator": "Python random.Random (MT19937)",
+    "python": "3.12.3",
+    "stream_derivation": "sha256(traffic-demand-v1:<seed>:<stream_name>) interpreted as big-endian integer",
+    "time_resolution": "integer microseconds; future engine step alignment requires explicit resolution"
+  },
+  "resident_persons": 2300,
+  "resident_travelers": 460,
+  "resident_vehicle_requests": 380,
+  "residents_without_scheduled_departure": 1840,
+  "seed": 20261117,
+  "status": "materialized_unrouted_hypothetical_demand",
+  "total_future_vehicle_requests": 890,
+  "unresolved": [
+    "AOI polygon and extracted lane lengths",
+    "origin/destination access and boundary gateways",
+    "physical initial road population and prior trip histories",
+    "routes, controls and vehicle dynamics",
+    "operator assignments and policy-visible observation profiles"
+  ]
+}

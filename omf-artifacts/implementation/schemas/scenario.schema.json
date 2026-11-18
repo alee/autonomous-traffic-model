@@ -1,0 +1,619 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Draft traffic scenario recipe v0.2",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "minLength": 1
+    },
+    "schema_version": {
+      "const": "0.2"
+    },
+    "scenario_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "readiness": {
+      "const": "draft"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_class": {
+      "enum": [
+        "hypothetical",
+        "empirical",
+        "mixed"
+      ]
+    },
+    "scientific_sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "clock": {
+      "type": "object",
+      "properties": {
+        "timezone": {
+          "const": "America/Phoenix"
+        },
+        "start_local": {
+          "type": "string",
+          "pattern": "^([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]$"
+        },
+        "analysis_start_s": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "demand_stop_s": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "end_s": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "required": [
+        "timezone",
+        "start_local",
+        "analysis_start_s",
+        "demand_stop_s",
+        "end_s"
+      ],
+      "additionalProperties": false
+    },
+    "assets": {
+      "type": "object",
+      "properties": {
+        "network": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "sha256": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          },
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "demand": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "sha256": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          },
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "population": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "sha256": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          },
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "dynamics": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "sha256": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          },
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "environment": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "sha256": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          },
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "network",
+        "demand",
+        "population",
+        "dynamics",
+        "environment"
+      ],
+      "additionalProperties": false
+    },
+    "initialization": {
+      "type": "object",
+      "properties": {
+        "mode": {
+          "const": "quiescent"
+        },
+        "actor_materialization_profile": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "sha256": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          },
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "environment_profile": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "sha256": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          },
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "occupancy_profiles": {
+          "type": "object",
+          "properties": {
+            "road": {
+              "type": "object",
+              "properties": {
+                "measure": {
+                  "enum": [
+                    null,
+                    "spatial_occupied_fraction",
+                    "vehicles_per_lane_km",
+                    "temporal_detector_occupancy_fraction"
+                  ]
+                },
+                "profile": {
+                  "type": "object",
+                  "properties": {
+                    "path": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "minLength": 1
+                    },
+                    "sha256": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "pattern": "^[a-f0-9]{64}$"
+                    }
+                  },
+                  "required": [
+                    "path",
+                    "sha256"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "measure",
+                "profile"
+              ],
+              "additionalProperties": false
+            },
+            "vehicle": {
+              "type": "object",
+              "properties": {
+                "unit": {
+                  "const": "persons_per_vehicle"
+                },
+                "profile": {
+                  "type": "object",
+                  "properties": {
+                    "path": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "minLength": 1
+                    },
+                    "sha256": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "pattern": "^[a-f0-9]{64}$"
+                    }
+                  },
+                  "required": [
+                    "path",
+                    "sha256"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "unit",
+                "profile"
+              ],
+              "additionalProperties": false
+            },
+            "household": {
+              "type": "object",
+              "properties": {
+                "unit": {
+                  "const": "persons_per_household"
+                },
+                "representation": {
+                  "enum": [
+                    null,
+                    "explicit_households",
+                    "weighted_households",
+                    "zone_aggregates"
+                  ]
+                },
+                "profile": {
+                  "type": "object",
+                  "properties": {
+                    "path": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "minLength": 1
+                    },
+                    "sha256": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "pattern": "^[a-f0-9]{64}$"
+                    }
+                  },
+                  "required": [
+                    "path",
+                    "sha256"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "unit",
+                "representation",
+                "profile"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "road",
+            "vehicle",
+            "household"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "mode",
+        "actor_materialization_profile",
+        "environment_profile",
+        "occupancy_profiles"
+      ],
+      "additionalProperties": false
+    },
+    "future_inputs": {
+      "type": "object",
+      "properties": {
+        "trip_schedule": {
+          "const": "assets.demand"
+        },
+        "events": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              },
+              "sha256": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "^[a-f0-9]{64}$"
+              }
+            },
+            "required": [
+              "path",
+              "sha256"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "trip_schedule",
+        "events"
+      ],
+      "additionalProperties": false
+    },
+    "checkpoints": {
+      "type": "object",
+      "properties": {
+        "at_elapsed_s": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "uniqueItems": true
+        },
+        "capture_phase": {
+          "const": "before_tick_inputs"
+        }
+      },
+      "required": [
+        "at_elapsed_s",
+        "capture_phase"
+      ],
+      "additionalProperties": false
+    },
+    "spatial_scope": {
+      "type": "object",
+      "properties": {
+        "aoi": {
+          "oneOf": [
+            {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "const": "bbox"
+                },
+                "crs": {
+                  "const": "EPSG:4326"
+                },
+                "bounds": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "prefixItems": [
+                    {
+                      "type": "number",
+                      "minimum": -180,
+                      "maximum": 180
+                    },
+                    {
+                      "type": "number",
+                      "minimum": -90,
+                      "maximum": 90
+                    },
+                    {
+                      "type": "number",
+                      "minimum": -180,
+                      "maximum": 180
+                    },
+                    {
+                      "type": "number",
+                      "minimum": -90,
+                      "maximum": 90
+                    }
+                  ],
+                  "minItems": 4,
+                  "maxItems": 4
+                }
+              },
+              "required": [
+                "kind",
+                "crs",
+                "bounds"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "const": "polygon"
+                },
+                "boundary": {
+                  "type": "object",
+                  "properties": {
+                    "path": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "minLength": 1
+                    },
+                    "sha256": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "pattern": "^[a-f0-9]{64}$"
+                    }
+                  },
+                  "required": [
+                    "path",
+                    "sha256"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "kind",
+                "boundary"
+              ],
+              "additionalProperties": false
+            }
+          ]
+        },
+        "context_buffer_m": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "external_demand_profile": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "sha256": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          },
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "reporting_extent": {
+          "const": "aoi_and_context_separately"
+        }
+      },
+      "required": [
+        "aoi",
+        "context_buffer_m",
+        "external_demand_profile",
+        "reporting_extent"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "$schema",
+    "schema_version",
+    "scenario_id",
+    "readiness",
+    "description",
+    "evidence_class",
+    "scientific_sources",
+    "clock",
+    "assets",
+    "initialization",
+    "future_inputs",
+    "checkpoints",
+    "spatial_scope"
+  ],
+  "additionalProperties": false
+}

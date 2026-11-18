@@ -1,0 +1,32 @@
+{
+  "$schema": "../schemas/run-request.schema.json",
+  "schema_version": "0.1",
+  "run_id": "phoenix-c0-pilot-001-resume",
+  "readiness": "draft",
+  "scenario": {
+    "path": "phoenix-morning.scenario.json",
+    "sha256": null
+  },
+  "policy": {
+    "family": "C0",
+    "definition": {
+      "path": null,
+      "sha256": null
+    },
+    "initialization_profile": {
+      "path": null,
+      "sha256": null
+    }
+  },
+  "start": {
+    "mode": "exact_continuation",
+    "checkpoint": {
+      "path": null,
+      "sha256": null
+    },
+    "expected_elapsed_s": 10800
+  },
+  "randomness": {
+    "restore": "checkpoint_stream_states"
+  }
+}

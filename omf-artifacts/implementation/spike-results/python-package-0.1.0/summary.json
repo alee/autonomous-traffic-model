@@ -1,0 +1,49 @@
+{
+  "status": "fixture_only_not_phoenix_validation",
+  "packages": {
+    "eclipse-sumo": "1.28.0",
+    "traci": "1.28.0",
+    "sumolib": "1.28.0",
+    "sumo-data": "1.28.0"
+  },
+  "inputs": {
+    "network_sha256": "8c53b0515470834ae15f259520e5315806aef2479418f05444024864b46aab20",
+    "routes_sha256": "58c3b905096962e21194a1814292bc384fbe0e01b101a5dcae58179f6f668204",
+    "packages": {
+      "eclipse-sumo": "1.28.0",
+      "traci": "1.28.0",
+      "sumolib": "1.28.0",
+      "sumo-data": "1.28.0"
+    }
+  },
+  "coverage": {
+    "rider_carried": true,
+    "parked_vehicle": true,
+    "future_vehicle_departed": true,
+    "active_fault_at_first_checkpoint": true,
+    "inflight_message_at_both_checkpoints": true,
+    "reservation_at_both_checkpoints": true,
+    "traffic_light_present": true
+  },
+  "checks": [
+    {
+      "checkpoint_time_s": 30.0,
+      "samples_compared": 260,
+      "exact_observed_trace_match": true,
+      "first_difference": null
+    },
+    {
+      "checkpoint_time_s": 60.0,
+      "samples_compared": 200,
+      "exact_observed_trace_match": true,
+      "first_difference": null
+    }
+  ],
+  "all_observed_checks_pass": true,
+  "limits": [
+    "single synthetic grid and simple explicit dynamics",
+    "same Linux platform and engine build",
+    "observed traces and adapter state compared; unobserved engine state not proved complete",
+    "no collision/safety validity or Phoenix performance claim"
+  ]
+}

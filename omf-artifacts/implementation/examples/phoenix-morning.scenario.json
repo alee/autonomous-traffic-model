@@ -1,0 +1,102 @@
+{
+  "$schema": "../schemas/scenario.schema.json",
+  "schema_version": "0.2",
+  "scenario_id": "phoenix-quiescent-0300-baseline",
+  "readiness": "draft",
+  "description": "Hypothetical Phoenix 03:00 quiescent start with occupancy-conditioned individual actors, configurable AOI, and no injected disturbance; unresolved scientific inputs prevent execution.",
+  "evidence_class": "hypothetical",
+  "scientific_sources": [
+    "../../phoenix-case-study.md",
+    "../../abm-spec.md",
+    "../../scenario-register.md",
+    "../../initial-conditions.md"
+  ],
+  "clock": {
+    "timezone": "America/Phoenix",
+    "start_local": "03:00:00",
+    "analysis_start_s": null,
+    "demand_stop_s": 25200,
+    "end_s": 28800
+  },
+  "assets": {
+    "network": {
+      "path": null,
+      "sha256": null
+    },
+    "demand": {
+      "path": null,
+      "sha256": null
+    },
+    "population": {
+      "path": null,
+      "sha256": null
+    },
+    "dynamics": {
+      "path": null,
+      "sha256": null
+    },
+    "environment": {
+      "path": null,
+      "sha256": null
+    }
+  },
+  "initialization": {
+    "mode": "quiescent",
+    "actor_materialization_profile": {
+      "path": null,
+      "sha256": null
+    },
+    "environment_profile": {
+      "path": null,
+      "sha256": null
+    },
+    "occupancy_profiles": {
+      "road": {
+        "measure": null,
+        "profile": {
+          "path": null,
+          "sha256": null
+        }
+      },
+      "vehicle": {
+        "unit": "persons_per_vehicle",
+        "profile": {
+          "path": null,
+          "sha256": null
+        }
+      },
+      "household": {
+        "unit": "persons_per_household",
+        "representation": null,
+        "profile": {
+          "path": null,
+          "sha256": null
+        }
+      }
+    }
+  },
+  "future_inputs": {
+    "trip_schedule": "assets.demand",
+    "events": []
+  },
+  "checkpoints": {
+    "at_elapsed_s": [
+      10800,
+      16200
+    ],
+    "capture_phase": "before_tick_inputs"
+  },
+  "spatial_scope": {
+    "aoi": {
+      "kind": "bbox",
+      "crs": "EPSG:4326",
+      "bounds": null
+    },
+    "context_buffer_m": null,
+    "external_demand_profile": {
+      "path": null,
+      "sha256": null
+    },
+    "reporting_extent": "aoi_and_context_separately"
+  }
+}

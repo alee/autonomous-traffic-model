@@ -1,0 +1,39 @@
+{
+  "$schema": "../schemas/run-request.schema.json",
+  "schema_version": "0.1",
+  "run_id": "phoenix-c0-pilot-001",
+  "readiness": "draft",
+  "scenario": {
+    "path": "phoenix-morning.scenario.json",
+    "sha256": null
+  },
+  "policy": {
+    "family": "C0",
+    "definition": {
+      "path": null,
+      "sha256": null
+    },
+    "initialization_profile": {
+      "path": null,
+      "sha256": null
+    }
+  },
+  "start": {
+    "mode": "fresh"
+  },
+  "randomness": {
+    "algorithm": null,
+    "algorithm_version": null,
+    "seed_derivation": null,
+    "root_seed": 20261117,
+    "replicate_id": "pilot-001",
+    "stream_names": [
+      "demand",
+      "departures",
+      "population",
+      "fault_selection",
+      "communications",
+      "policy_ties"
+    ]
+  }
+}

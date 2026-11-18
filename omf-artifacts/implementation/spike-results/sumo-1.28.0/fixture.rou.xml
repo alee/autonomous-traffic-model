@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<routes>
+  <vType id="fixtureCar" accel="2" decel="4.5" emergencyDecel="9" sigma="0" tau="1" length="5" minGap="2.5" maxSpeed="10" personCapacity="4" carFollowModel="Krauss" />
+  <route id="route" edges="C1C2 C2B2 B2B1 B1A1 A1A2 A2B2 B2C2 C2C1" />
+  <vehicle id="car0" type="fixtureCar" route="route" depart="0">
+    <stop lane="C1C2_0" endPos="10" duration="2" triggered="true" expected="rider0" />
+  </vehicle>
+  <person id="rider0" depart="0" departPos="10">
+    <ride from="C1C2" to="C2C1" lines="car0" />
+  </person>
+  <vehicle id="car1" type="fixtureCar" route="route" depart="3" />
+  <vehicle id="parked" type="fixtureCar" route="route" depart="6">
+    <stop lane="C1C2_0" endPos="40" duration="80" parking="true" />
+  </vehicle>
+  <vehicle id="future" type="fixtureCar" route="route" depart="90" />
+</routes>

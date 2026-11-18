@@ -1,0 +1,24 @@
+# Python package and environment capture
+
+Version: 0.2 | Date: 2026-11-17 | Authority: FAIR | Scope: narrow implementation packaging/environment task
+
+The managed object here is the local `autonomous-traffic-model` Python software, version 0.1.0. This note records the scoped packaging/environment work; it is not a project-wide FAIR assessment or management plan. Scientific input and generated evidence remain governed by the existing OMFA/OMFB artifacts. No release or external publication has been requested or performed.
+
+## Authoritative files and observed environment
+
+`pyproject.toml` is the package/build/dependency declaration. `uv.lock` records the resolved dependency distributions and hashes; `.python-version` selects Python 3.12. Code is under `src/autonomous_traffic`. Exact observed interpreter: CPython 3.12.3 on Linux x86_64. Tested uv: 0.12.7. Supported interpreter declaration is initially >=3.12,<3.13; other interpreter lines/platforms are unverified. Lockfile entries for other operating systems do not establish tested portability.
+
+Core runtime dependencies: none. The `sumo` extra pins eclipse-sumo, traci, sumolib and sumo-data to 1.28.0. The development group pins hatchling 1.27.0 and Ruff 0.17.5; its resolved transitive build dependencies are captured in uv.lock. Use the locked development environment with `uv build --no-build-isolation` for the recorded build workflow. Interpreter patch version, operating system, native binary identity, floating-point behavior and full dynamic state remain relevant to exact simulation continuation. A package lockfile alone does not establish bitwise scientific reruns.
+
+## Installation, execution and preservation
+
+From the repository root, use `uv sync --locked --extra sumo`, then include `--locked --extra sumo` on uv engine/test commands. For core-only work use `uv sync --locked`; SUMO imports are lazy and the installed wheel was tested without the optional packages. Dependencies are sourced from the public PyPI registry; no credentials/private registry URLs are embedded in the lockfile. Virtual environments, caches, build distributions and new run directories are excluded by .gitignore. Reviewed evidence under omf-artifacts remains visible.
+
+Preserve source, pyproject.toml, uv.lock, the Python/runtime identity, accepted configuration bytes, input/output digests and original scientific inputs with any shared run. The initial generated dataset remains unchanged by the package migration. Local compatibility launchers retain the earlier script invocation paths. Configuration remains an explicit external file; a wheel does not bundle the Phoenix network or all scientific artifacts. The source distribution includes the accepted benchmark configuration, tests and launchers; it is not a complete scientific archive.
+
+## Unknowns and boundaries
+
+The local project is initialized with Git on main for its first source snapshot. Repository remote, software license, creator/citation metadata, persistent identifiers and external archive remain unknown/unassigned. Exact commit IDs are recorded by Git; historical pre-Git provenance revisions correctly remain unknown. No license is inferred from SUMO or other dependencies, and no publishing/citation files are fabricated. These are follow-ups for a release or broader stewardship task. Full FAIR planning/assessment, cross-object metadata harmonization and release archival are outside this narrow packaging slice. Implementation and model validity limits are in ../implementation/python-stack-verification.md.
+
+## Cleanup checks
+Ruff formatting/import cleanup preserves the source function ASTs and the accepted configuration/generated data bytes. Ten tests, lint and formatter checks are required before the initial commit. The local .venv, caches, build products and new runs remain ignored; reviewed generated inputs and raw engineering evidence are retained.

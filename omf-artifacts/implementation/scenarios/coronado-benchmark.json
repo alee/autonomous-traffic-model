@@ -1,0 +1,170 @@
+{
+  "proposal_id": "coronado-hypothetical-v1",
+  "status": "accepted-hypothetical-benchmark",
+  "evidence_class": "hypothetical",
+  "execution_ready": false,
+  "accepted_context": {
+    "start_local": "03:00:00",
+    "timezone": "America/Phoenix",
+    "aoi_configurable": true,
+    "checkpoint_continuation": true,
+    "occupancy_layers": [
+      "road",
+      "vehicle",
+      "household"
+    ]
+  },
+  "candidate_aoi": {
+    "label": "Coronado, Phoenix",
+    "west": "7th Street",
+    "east": "16th Street",
+    "south": "McDowell Road",
+    "north": "Thomas Road",
+    "polygon_asset": null,
+    "context_buffer_m": 1000,
+    "context_sensitivity_m": [
+      500,
+      2000
+    ]
+  },
+  "households": {
+    "count": 1000,
+    "size_counts": {
+      "1": 250,
+      "2": 400,
+      "3": 200,
+      "4": 100,
+      "5": 50
+    },
+    "representation": "synthetic_explicit",
+    "resident_persons_derived": 2300,
+    "initial_resident_location": "home",
+    "demographics": "not represented; no age or eligibility inference"
+  },
+  "resident_trips": {
+    "party_counts_by_persons": {
+      "1": 320,
+      "2": 50,
+      "4": 10
+    },
+    "distinct_departing_households": 380,
+    "persons_derived": 460,
+    "vehicle_trip_requests_derived": 380,
+    "selection": "select size-4 parties from distinct households of size>=4; then pairs from unused size>=2 households; then singles from unused households; no person reused",
+    "departure_vehicle_counts": [
+      {
+        "from_local": "03:00:00",
+        "to_local": "06:00:00",
+        "count": 19
+      },
+      {
+        "from_local": "06:00:00",
+        "to_local": "07:00:00",
+        "count": 76
+      },
+      {
+        "from_local": "07:00:00",
+        "to_local": "08:00:00",
+        "count": 152
+      },
+      {
+        "from_local": "08:00:00",
+        "to_local": "09:00:00",
+        "count": 95
+      },
+      {
+        "from_local": "09:00:00",
+        "to_local": "10:00:00",
+        "count": 38
+      }
+    ],
+    "destinations": {
+      "internal_requests": 228,
+      "outbound_gateway_requests": 152
+    },
+    "within_bin_departure_rule": "uniform independent draws followed by stable time/ID sorting",
+    "destination_rule": "uniform among reachable distinct eligible endpoints of the selected class; partition exact counts before routing",
+    "return_trips": "not represented in this first accounting benchmark"
+  },
+  "initial_road_loading": {
+    "measure": "vehicles_per_lane_km",
+    "target": 2.0,
+    "count_rule": "round_half_up(target * eligible_directional_lane_km_in_aoi_and_context)",
+    "eligible_lanes": "passenger-car permitted lanes, exclude duplicate/internal junction lane lengths",
+    "realized_count": null,
+    "road_users": "external through travelers, distinct from resident population",
+    "vehicle_occupancy_fractions": {
+      "0": 0.05,
+      "1": 0.8,
+      "2": 0.15
+    },
+    "count_allocation": "largest remainder with stable occupancy-category tie order; report realized fractions",
+    "placement": "sample boundary-to-boundary reachable routes; sample feasible route progress weighted by length; reject overlaps/incompatible speed states rather than silently dropping actors",
+    "physical_profiles": null,
+    "trip_histories": null
+  },
+  "external_future_arrivals": {
+    "counts_by_window": [
+      {
+        "from_local": "03:00:00",
+        "to_local": "06:00:00",
+        "vehicles_per_hour": 30,
+        "derived_count": 90
+      },
+      {
+        "from_local": "06:00:00",
+        "to_local": "09:00:00",
+        "vehicles_per_hour": 120,
+        "derived_count": 360
+      },
+      {
+        "from_local": "09:00:00",
+        "to_local": "10:00:00",
+        "vehicles_per_hour": 60,
+        "derived_count": 60
+      }
+    ],
+    "total_vehicle_requests": 510,
+    "occupancy_profile": "same 0/1/2-person fractions as initial external vehicles; exact allocation by largest remainder",
+    "gateway_rule": "distinct reachable boundary gateway pairs; uniform choice among feasible pairs",
+    "timing": "uniform independent draws within each window at fixed counts",
+    "relationship_to_residents": "separate external population; never add these passengers to resident household totals"
+  },
+  "demand_horizon": {
+    "stop_local": "10:00:00",
+    "end_local": "11:00:00",
+    "analysis_start_local": null
+  },
+  "vehicle_service": {
+    "resident_request_service": "one distinct prepositioned autonomous vehicle per resident party; no pickup leg modeled",
+    "resident_seat_capacity": 4,
+    "resident_prepositioned_vehicle_count": 380,
+    "external_vehicle_seat_capacity": 2,
+    "vehicle_availability": "preposition resident service vehicles at selected household origins; preserve parked state and do not count parked supply as initial road occupancy"
+  },
+  "control_and_failures": {
+    "baseline_family": "C0",
+    "signal_program_asset": null,
+    "reversible_lane_program_asset": null,
+    "disruptions": [],
+    "operator_assignment": null
+  },
+  "scope_limits": [
+    "hypothetical vehicle-network accounting benchmark, not an estimate of Coronado population or demand",
+    "household placement and destination opportunities not yet derived from land use",
+    "pedestrian/transit demand and realistic curb/pickup interactions not yet populated; no multimodal welfare or safety conclusion",
+    "boundary gateway is the explicit modeled endpoint for outbound/through trips, not an observed ultimate destination",
+    "polygon, routable network, legal/time-varying access, physical and control profiles, timing precision and exact initialization remain unresolved"
+  ],
+  "engine_recommendation": {
+    "candidate": "SUMO with an external coordination/demand adapter",
+    "status": "recommendation subject to feasibility tests",
+    "installed": false,
+    "checkpoint_status": "not established for the chosen dynamics and external state"
+  },
+  "acceptance": {
+    "local_date": "2026-11-17",
+    "authority": "user",
+    "scope": "Coronado first accounting benchmark including numerical inputs and stated service/mode simplifications; empirical validity not established"
+  }
+}
